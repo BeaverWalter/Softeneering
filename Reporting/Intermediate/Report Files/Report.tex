@@ -18,12 +18,24 @@
 First and foremost we want to mention that often use Jetbrains IntelliJ and Codescene as a starting point as they both provide functionality for multiple of the below mentioned subsections.
 
 \subsection{Duplicate Code}
+
+As an initial tool, we'll use IntelliJ (which provides simple assisting messages when it detects duplicate code) on the relevant parts of the code. Furthermore we'll use iClones to help us with further detection of duplicate code.
+
 \subsection{Metrics and Visualisation}
 
 For metrics and visualisation (as well as other things) we will mostly be using Codescene.
 
 \subsection{Mining Repositories}
+
+We used Gsource, but as this mostly only provides a visual interactive history of your repository, this tool will be of no further use to us.\\
+
+\noindent
+We'll also use Codescene for this.
+
 \subsection{Refactoring Assistants}
+
+As a baseline, we'll use IntelliJ to help us refactor (and specify what and how we should refactor) the project as well as Codescene which gives clear indications on what it thinks should be refactored.
+
 \subsection{Test Coverage and Dynamic Analysis}
 
 For test coverage, we plan on using LittleDarwin to perform mutation testing on the project. However, during our assignments for the Software Testing course, we already used LittleDarwin for that project, and even on such a small project it took a fairly long while to run LittleDarwin. Because of this, and because of the other tasks, assignments... we have, we have not yet used LittleDarwin.
