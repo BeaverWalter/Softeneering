@@ -31,6 +31,8 @@ As an initial tool, we'll use IntelliJ (which provides simple assisting messages
 	\caption{iClones Duplication Report}
 \end{figure}
 
+The duplication report showed us the presence of many duplications, mostly in the test classes, but some in the source classes as well. The question still remains how many of these duplications will actually be relevant for this assignment.
+
 \subsection{Metrics and Visualisation}
 
 For metrics and visualisation (as well as other things) we will mostly be using Codescene.
@@ -40,6 +42,8 @@ For metrics and visualisation (as well as other things) we will mostly be using 
 	\includegraphics[width=0.9\textwidth]{codescene_analysis.png}
 	\caption{Codescene Analysis}
 \end{figure}
+
+https://codescene.io/projects/4473/jobs/12562/results
 
 \subsection{Mining Repositories}
 
@@ -64,6 +68,8 @@ As a baseline, we'll use IntelliJ to help us refactor (and specify what and how 
 	\includegraphics[width=0.9\textwidth]{codescene_hotspots.png}
 	\caption{Codescene Hotspots}
 \end{figure}
+
+Here we can clearly see that both the classes XYPlot and CategoryPlot are highlighted as hotspots. This will most presumably be the classes most relevant for this assignment to refactor.
 
 \subsection{Test Coverage and Dynamic Analysis}
 
