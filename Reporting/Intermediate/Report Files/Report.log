@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  17 APR 2019 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  22 APR 2019 14:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -149,44 +149,49 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
 <images/iclones_dup.png, id=9, 945.5325pt x 743.77875pt>
 File: images/iclones_dup.png Graphic file (type png)
 <use images/iclones_dup.png>
-Package pdftex.def Info: images/iclones_dup.png  used on input line 30.
+Package pdftex.def Info: images/iclones_dup.png  used on input line 34.
 (pdftex.def)             Requested size: 310.4979pt x 244.24474pt.
-<images/codescene_analysis.png, id=10, 1686.3pt x 769.87625pt>
+[2 <./images/iclones_dup.png>]
+<images/codescene_analysis.png, id=13, 1686.3pt x 769.87625pt>
 File: images/codescene_analysis.png Graphic file (type png)
 <use images/codescene_analysis.png>
-Package pdftex.def Info: images/codescene_analysis.png  used on input line 42.
+Package pdftex.def Info: images/codescene_analysis.png  used on input line 46.
 (pdftex.def)             Requested size: 310.4979pt x 141.75528pt.
- [2 <./images/iclones_dup.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+ [3 <./images/codescene_analysis.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-<images/gsource.png, id=14, 1015.795pt x 754.82pt>
+<images/gsource.png, id=17, 1015.795pt x 754.82pt>
 File: images/gsource.png Graphic file (type png)
 <use images/gsource.png>
-Package pdftex.def Info: images/gsource.png  used on input line 58.
+Package pdftex.def Info: images/gsource.png  used on input line 63.
 (pdftex.def)             Requested size: 310.4979pt x 230.72078pt.
-[3 <./images/codescene_analysis.png>]
-<images/codescene_hotspots.png, id=18, 1178.4025pt x 833.1125pt>
+[4 <./images/gsource.png>]
+<images/codescene_hotspots.png, id=21, 1178.4025pt x 833.1125pt>
 File: images/codescene_hotspots.png Graphic file (type png)
 <use images/codescene_hotspots.png>
-Package pdftex.def Info: images/codescene_hotspots.png  used on input line 68.
+Package pdftex.def Info: images/codescene_hotspots.png  used on input line 74.
 (pdftex.def)             Requested size: 310.4979pt x 219.51524pt.
- [4 <./images/gsource.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+ [5 <./images/codescene_hotspots.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-<images/cobertura_coverage.png, id=22, 1529.715pt x 748.7975pt>
+<images/cobertura_coverage.png, id=25, 1529.715pt x 748.7975pt>
 File: images/cobertura_coverage.png Graphic file (type png)
 <use images/cobertura_coverage.png>
-Package pdftex.def Info: images/cobertura_coverage.png  used on input line 82.
+Package pdftex.def Info: images/cobertura_coverage.png  used on input line 89.
 (pdftex.def)             Requested size: 310.4979pt x 151.98485pt.
-[5 <./images/codescene_hotspots.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
@@ -198,12 +203,12 @@ Here is how much of TeX's memory you used:
  5092 multiletter control sequences out of 15000+600000
  7894 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,409b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,6n,25p,411b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr12.pfb>
-Output written on Report.pdf (6 pages, 979177 bytes).
+Output written on Report.pdf (6 pages, 979705 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  23 compressed objects within 1 object stream
