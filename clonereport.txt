@@ -1,0 +1,847 @@
+Version /home/walter/UA/Software Reengineering/Softeneering/
+	CloneClass	3
+		6	./src/main/java/org/jfree/chart/renderer/category/LayeredBarRenderer.java	230	255
+		7	./src/main/java/org/jfree/chart/renderer/category/LayeredBarRenderer.java	361	386
+	CloneClass	12
+		27	./src/main/java/org/jfree/chart/renderer/category/LayeredBarRenderer.java	289	306
+		28	./src/main/java/org/jfree/chart/renderer/category/LayeredBarRenderer.java	416	432
+	CloneClass	89
+		213	./src/main/java/org/jfree/chart/renderer/category/LineAndShapeRenderer.java	633	662
+		214	./src/main/java/org/jfree/chart/renderer/category/ScatterRenderer.java	465	494
+	CloneClass	92
+		220	./src/main/java/org/jfree/chart/renderer/category/LineAndShapeRenderer.java	668	683
+		219	./src/main/java/org/jfree/chart/renderer/category/ScatterRenderer.java	498	513
+	CloneClass	88
+		211	./src/main/java/org/jfree/chart/renderer/category/LineAndShapeRenderer.java	801	820
+		212	./src/main/java/org/jfree/chart/renderer/category/ScatterRenderer.java	433	452
+	CloneClass	243
+		582	./src/main/java/org/jfree/chart/annotations/CategoryPointerAnnotation.java	382	417
+		581	./src/main/java/org/jfree/chart/annotations/XYPointerAnnotation.java	388	423
+	CloneClass	6
+		16	./src/main/java/org/jfree/chart/annotations/CategoryPointerAnnotation.java	451	476
+		15	./src/main/java/org/jfree/chart/annotations/XYPointerAnnotation.java	471	496
+	CloneClass	11
+		26	./src/main/java/org/jfree/chart/annotations/CategoryPointerAnnotation.java	486	497
+		25	./src/main/java/org/jfree/chart/annotations/XYPointerAnnotation.java	506	517
+	CloneClass	46
+		102	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	346	362
+		99	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	374	390
+		101	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	402	418
+		100	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	430	446
+	CloneClass	36
+		77	./src/test/java/org/jfree/data/time/TimePeriodValuesTest.java	79	87
+		76	./src/test/java/org/jfree/data/time/TimeSeriesTest.java	102	110
+	CloneClass	48
+		110	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	346	362
+		106	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	374	390
+		109	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	402	418
+		107	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	430	446
+		108	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	458	474
+	CloneClass	25
+		54	./src/main/java/org/jfree/chart/axis/NumberAxis.java	948	986
+		53	./src/main/java/org/jfree/chart/axis/NumberAxis.java	1044	1083
+	CloneClass	34
+		72	./src/main/java/org/jfree/chart/axis/NumberAxis.java	1005	1028
+		73	./src/main/java/org/jfree/chart/axis/NumberAxis.java	1105	1129
+	CloneClass	83
+		202	./src/main/java/org/jfree/chart/axis/DateAxis.java	1416	1444
+		201	./src/main/java/org/jfree/chart/axis/DateAxis.java	1468	1496
+	CloneClass	91
+		218	./src/main/java/org/jfree/chart/axis/DateAxis.java	1555	1610
+		217	./src/main/java/org/jfree/chart/axis/DateAxis.java	1673	1727
+	CloneClass	97
+		234	./src/main/java/org/jfree/chart/axis/DateAxis.java	1626	1655
+		235	./src/main/java/org/jfree/chart/axis/DateAxis.java	1743	1771
+	CloneClass	183
+		429	./src/main/java/org/jfree/chart/axis/CyclicNumberAxis.java	998	1016
+		428	./src/main/java/org/jfree/chart/axis/ValueAxis.java	720	738
+	CloneClass	226
+		537	./src/test/java/org/jfree/chart/renderer/xy/StandardXYItemRendererTest.java	202	220
+		541	./src/test/java/org/jfree/chart/renderer/xy/XYAreaRenderer2Test.java	178	196
+		536	./src/test/java/org/jfree/chart/renderer/xy/XYAreaRendererTest.java	224	242
+		542	./src/test/java/org/jfree/chart/renderer/xy/XYBarRendererTest.java	338	356
+		540	./src/test/java/org/jfree/chart/renderer/xy/XYDifferenceRendererTest.java	182	200
+		539	./src/test/java/org/jfree/chart/renderer/xy/XYDotRendererTest.java	148	166
+		538	./src/test/java/org/jfree/chart/renderer/xy/XYLineAndShapeRendererTest.java	270	288
+	CloneClass	52
+		117	./src/main/java/org/jfree/chart/renderer/xy/SamplingXYLineRenderer.java	243	262
+		118	./src/main/java/org/jfree/chart/renderer/xy/XYLineAndShapeRenderer.java	905	924
+	CloneClass	122
+		284	./src/test/java/org/jfree/chart/renderer/category/GroupedStackedBarRendererTest.java	150	164
+		286	./src/test/java/org/jfree/chart/renderer/category/StackedAreaRendererTest.java	67	81
+		285	./src/test/java/org/jfree/chart/renderer/category/StackedBarRendererTest.java	127	141
+	CloneClass	33
+		70	./src/main/java/org/jfree/chart/panel/CrosshairOverlay.java	273	288
+		71	./src/main/java/org/jfree/chart/panel/CrosshairOverlay.java	330	345
+	CloneClass	207
+		485	./src/test/java/org/jfree/chart/plot/CombinedDomainXYPlotTest.java	172	214
+		486	./src/test/java/org/jfree/chart/plot/CombinedRangeXYPlotTest.java	163	204
+	CloneClass	210
+		498	./src/test/java/org/jfree/chart/plot/CombinedDomainXYPlotTest.java	221	242
+		497	./src/test/java/org/jfree/chart/plot/CombinedRangeXYPlotTest.java	211	233
+	CloneClass	57
+		136	./src/main/java/org/jfree/chart/renderer/xy/XYAreaRenderer.java	438	472
+		137	./src/main/java/org/jfree/chart/renderer/xy/XYAreaRenderer2.java	232	266
+	CloneClass	66
+		155	./src/main/java/org/jfree/chart/renderer/xy/XYAreaRenderer.java	525	540
+		154	./src/main/java/org/jfree/chart/renderer/xy/XYAreaRenderer2.java	319	333
+	CloneClass	74
+		181	./src/main/java/org/jfree/chart/renderer/xy/XYAreaRenderer.java	655	669
+		182	./src/main/java/org/jfree/chart/renderer/xy/XYAreaRenderer2.java	334	353
+	CloneClass	223
+		525	./src/main/java/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	885	911
+		526	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1020	1046
+	CloneClass	249
+		594	./src/main/java/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	1083	1105
+		593	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1322	1343
+	CloneClass	231
+		554	./src/main/java/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	1106	1172
+		553	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1348	1413
+	CloneClass	26
+		55	./src/test/java/org/jfree/data/gantt/TaskSeriesCollectionTest.java	428	435
+		56	./src/test/java/org/jfree/data/gantt/TaskSeriesTest.java	61	67
+	CloneClass	47
+		105	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	346	362
+		103	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	374	390
+		104	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	402	418
+	CloneClass	208
+		490	./src/test/java/org/jfree/chart/annotations/XYBoxAnnotationTest.java	177	193
+		491	./src/test/java/org/jfree/chart/annotations/XYTitleAnnotationTest.java	134	150
+		488	./src/test/java/org/jfree/chart/renderer/xy/StackedXYAreaRendererTest.java	169	185
+		487	./src/test/java/org/jfree/chart/renderer/xy/StackedXYAreaRendererTest.java	202	218
+		494	./src/test/java/org/jfree/chart/renderer/xy/XYAreaRenderer2Test.java	144	160
+		489	./src/test/java/org/jfree/chart/renderer/xy/XYAreaRendererTest.java	190	206
+		492	./src/test/java/org/jfree/chart/renderer/xy/XYStepAreaRendererTest.java	158	174
+		493	./src/test/java/org/jfree/chart/renderer/xy/XYStepRendererTest.java	137	153
+	CloneClass	60
+		143	./src/test/java/org/jfree/chart/block/BorderArrangementTest.java	311	322
+		142	./src/test/java/org/jfree/chart/block/BorderArrangementTest.java	330	341
+	CloneClass	76
+		186	./src/test/java/org/jfree/chart/block/BorderArrangementTest.java	389	401
+		185	./src/test/java/org/jfree/chart/block/BorderArrangementTest.java	410	422
+	CloneClass	104
+		248	./src/test/java/org/jfree/chart/block/BorderArrangementTest.java	425	435
+		249	./src/test/java/org/jfree/chart/block/BorderArrangementTest.java	743	753
+	CloneClass	107
+		254	./src/test/java/org/jfree/chart/block/BorderArrangementTest.java	436	447
+		255	./src/test/java/org/jfree/chart/block/BorderArrangementTest.java	754	765
+	CloneClass	90
+		216	./src/test/java/org/jfree/chart/block/BorderArrangementTest.java	629	640
+		215	./src/test/java/org/jfree/chart/block/BorderArrangementTest.java	648	659
+	CloneClass	101
+		243	./src/test/java/org/jfree/chart/block/BorderArrangementTest.java	707	719
+		242	./src/test/java/org/jfree/chart/block/BorderArrangementTest.java	728	740
+	CloneClass	115
+		271	./src/main/java/org/jfree/chart/plot/PiePlot.java	2341	2363
+		270	./src/main/java/org/jfree/chart/plot/SpiderWebPlot.java	1127	1149
+	CloneClass	124
+		290	./src/main/java/org/jfree/chart/renderer/category/GroupedStackedBarRenderer.java	139	155
+		289	./src/main/java/org/jfree/chart/renderer/category/StackedBarRenderer.java	237	253
+	CloneClass	125
+		292	./src/main/java/org/jfree/chart/renderer/category/GroupedStackedBarRenderer.java	279	305
+		291	./src/main/java/org/jfree/chart/renderer/category/StackedBarRenderer.java	330	357
+	CloneClass	127
+		295	./src/main/java/org/jfree/chart/renderer/category/GroupedStackedBarRenderer.java	305	329
+		296	./src/main/java/org/jfree/chart/renderer/category/StackedBarRenderer.java	357	381
+	CloneClass	77
+		189	./src/main/java/org/jfree/data/DefaultKeyedValues.java	420	444
+		187	./src/main/java/org/jfree/data/category/CategoryToPieDataset.java	311	335
+		188	./src/main/java/org/jfree/data/general/DefaultPieDataset.java	322	348
+	CloneClass	166
+		382	./src/test/java/org/jfree/data/category/DefaultIntervalCategoryDatasetTest.java	200	211
+		383	./src/test/java/org/jfree/data/category/DefaultIntervalCategoryDatasetTest.java	244	255
+		384	./src/test/java/org/jfree/data/category/DefaultIntervalCategoryDatasetTest.java	283	294
+	CloneClass	28
+		60	./src/test/java/org/jfree/data/gantt/TaskSeriesCollectionTest.java	428	435
+		59	./src/test/java/org/jfree/data/gantt/TaskSeriesCollectionTest.java	488	494
+		61	./src/test/java/org/jfree/data/gantt/TaskSeriesTest.java	61	67
+	CloneClass	149
+		346	./src/main/java/org/jfree/chart/labels/IntervalCategoryItemLabelGenerator.java	109	136
+		345	./src/main/java/org/jfree/chart/labels/IntervalCategoryToolTipGenerator.java	106	133
+	CloneClass	182
+		426	./src/test/java/org/jfree/chart/renderer/xy/CandlestickRendererTest.java	212	236
+		427	./src/test/java/org/jfree/chart/renderer/xy/HighLowRendererTest.java	161	185
+	CloneClass	220
+		519	./src/main/java/org/jfree/data/xy/DefaultXYDataset.java	325	341
+		518	./src/main/java/org/jfree/data/xy/DefaultXYZDataset.java	373	389
+	CloneClass	228
+		545	./src/main/java/org/jfree/data/xy/DefaultXYDataset.java	370	377
+		546	./src/main/java/org/jfree/data/xy/DefaultXYZDataset.java	423	430
+	CloneClass	64
+		151	./src/main/java/org/jfree/chart/block/CenterArrangement.java	92	109
+		150	./src/main/java/org/jfree/chart/block/ColumnArrangement.java	123	140
+	CloneClass	135
+		315	./src/test/java/org/jfree/chart/axis/CategoryAxisTest.java	175	197
+		316	./src/test/java/org/jfree/chart/axis/ExtendedCategoryAxisTest.java	127	149
+	CloneClass	241
+		578	./src/main/java/org/jfree/chart/axis/LogAxis.java	433	451
+		577	./src/main/java/org/jfree/chart/axis/NumberAxis.java	532	553
+	CloneClass	247
+		590	./src/main/java/org/jfree/chart/axis/LogAxis.java	530	554
+		589	./src/main/java/org/jfree/chart/axis/NumberAxis.java	651	679
+	CloneClass	31
+		66	./src/main/java/org/jfree/chart/axis/LogarithmicAxis.java	1029	1053
+		67	./src/main/java/org/jfree/chart/axis/NumberAxis.java	1083	1107
+	CloneClass	195
+		454	./src/main/java/org/jfree/chart/axis/LogarithmicAxis.java	840	864
+		453	./src/main/java/org/jfree/chart/axis/NumberAxis.java	986	1010
+		455	./src/main/java/org/jfree/chart/axis/SymbolAxis.java	595	618
+	CloneClass	172
+		403	./src/test/java/org/jfree/chart/plot/CombinedDomainCategoryPlotTest.java	143	155
+		401	./src/test/java/org/jfree/chart/plot/CombinedDomainXYPlotTest.java	153	165
+		402	./src/test/java/org/jfree/chart/plot/CombinedRangeCategoryPlotTest.java	143	155
+	CloneClass	189
+		441	./src/test/java/org/jfree/chart/entity/CategoryLabelEntityTest.java	71	89
+		442	./src/test/java/org/jfree/chart/entity/TickLabelEntityTest.java	64	82
+	CloneClass	185
+		433	./src/test/java/org/jfree/chart/plot/CombinedDomainCategoryPlotTest.java	140	155
+		432	./src/test/java/org/jfree/chart/plot/CombinedRangeCategoryPlotTest.java	140	155
+	CloneClass	188
+		439	./src/test/java/org/jfree/chart/plot/CombinedDomainCategoryPlotTest.java	162	200
+		440	./src/test/java/org/jfree/chart/plot/CombinedRangeCategoryPlotTest.java	162	200
+	CloneClass	193
+		449	./src/test/java/org/jfree/chart/plot/CombinedDomainCategoryPlotTest.java	207	245
+		450	./src/test/java/org/jfree/chart/plot/CombinedRangeCategoryPlotTest.java	207	245
+	CloneClass	69
+		165	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	138	150
+		163	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	180	192
+		164	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	200	212
+	CloneClass	19
+		42	./src/main/java/org/jfree/chart/axis/DateAxis.java	1605	1630
+		41	./src/main/java/org/jfree/chart/axis/NumberAxis.java	984	1009
+	CloneClass	51
+		115	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	304	318
+		116	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	378	392
+	CloneClass	78
+		190	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	452	466
+		191	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	526	540
+	CloneClass	82
+		199	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	600	614
+		200	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	674	688
+	CloneClass	87
+		209	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	748	762
+		210	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	822	836
+	CloneClass	99
+		238	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	896	910
+		239	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	970	984
+	CloneClass	111
+		262	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	1052	1081
+		263	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	1096	1125
+	CloneClass	217
+		512	./src/test/java/org/jfree/chart/plot/CategoryPlotTest.java	469	483
+		513	./src/test/java/org/jfree/chart/plot/PiePlotTest.java	397	411
+		511	./src/test/java/org/jfree/chart/plot/XYPlotTest.java	413	427
+	CloneClass	179
+		418	./src/main/java/org/jfree/chart/renderer/xy/StandardXYItemRenderer.java	583	599
+		419	./src/main/java/org/jfree/chart/renderer/xy/XYBubbleRenderer.java	296	312
+	CloneClass	198
+		463	./src/main/java/org/jfree/chart/renderer/category/GanttRenderer.java	357	378
+		462	./src/main/java/org/jfree/chart/renderer/category/GanttRenderer.java	495	518
+	CloneClass	63
+		149	./src/main/java/org/jfree/chart/renderer/xy/StandardXYItemRenderer.java	897	923
+		148	./src/main/java/org/jfree/chart/renderer/xy/XYLineAndShapeRenderer.java	1011	1036
+	CloneClass	177
+		414	./src/test/java/org/jfree/chart/entity/CategoryLabelEntityTest.java	72	88
+		412	./src/test/java/org/jfree/chart/entity/PieSectionEntityTest.java	68	85
+		415	./src/test/java/org/jfree/chart/entity/TickLabelEntityTest.java	65	81
+		413	./src/test/java/org/jfree/chart/entity/XYItemEntityTest.java	67	83
+	CloneClass	186
+		435	./src/test/java/org/jfree/data/xy/XIntervalSeriesTest.java	220	228
+		434	./src/test/java/org/jfree/data/xy/XYIntervalSeriesTest.java	220	228
+		436	./src/test/java/org/jfree/data/xy/YIntervalSeriesTest.java	220	228
+	CloneClass	40
+		85	./src/main/java/org/jfree/chart/renderer/category/AreaRenderer.java	173	189
+		86	./src/main/java/org/jfree/chart/renderer/category/BarRenderer.java	932	948
+		84	./src/main/java/org/jfree/chart/renderer/category/BoxAndWhiskerRenderer.java	466	482
+		87	./src/main/java/org/jfree/chart/renderer/category/LineAndShapeRenderer.java	641	657
+		88	./src/main/java/org/jfree/chart/renderer/category/ScatterRenderer.java	473	489
+	CloneClass	131
+		305	./src/test/java/org/jfree/chart/plot/PolarPlotTest.java	277	289
+		304	./src/test/java/org/jfree/chart/plot/PolarPlotTest.java	366	378
+	CloneClass	205
+		478	./src/test/java/org/jfree/chart/annotations/XYBoxAnnotationTest.java	177	196
+		479	./src/test/java/org/jfree/chart/annotations/XYTitleAnnotationTest.java	134	153
+		476	./src/test/java/org/jfree/chart/renderer/xy/StackedXYAreaRendererTest.java	169	188
+		482	./src/test/java/org/jfree/chart/renderer/xy/XYAreaRenderer2Test.java	144	163
+		477	./src/test/java/org/jfree/chart/renderer/xy/XYAreaRendererTest.java	190	209
+		480	./src/test/java/org/jfree/chart/renderer/xy/XYStepAreaRendererTest.java	158	177
+		481	./src/test/java/org/jfree/chart/renderer/xy/XYStepRendererTest.java	137	156
+	CloneClass	54
+		122	./src/test/java/org/jfree/data/xy/DefaultXYDatasetTest.java	186	207
+		123	./src/test/java/org/jfree/data/xy/DefaultXYZDatasetTest.java	189	210
+	CloneClass	232
+		557	./src/main/java/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	1106	1124
+		555	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1148	1165
+		556	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1348	1365
+	CloneClass	235
+		564	./src/main/java/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	1122	1136
+		565	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1177	1191
+		563	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1363	1377
+	CloneClass	233
+		560	./src/main/java/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	1136	1150
+		558	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1163	1177
+		559	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1377	1391
+	CloneClass	238
+		572	./src/main/java/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	1158	1172
+		570	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1199	1213
+		571	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1399	1413
+	CloneClass	162
+		372	./src/main/java/org/jfree/chart/labels/IntervalXYItemLabelGenerator.java	152	226
+		371	./src/main/java/org/jfree/chart/labels/IntervalXYToolTipGenerator.java	149	218
+	CloneClass	225
+		535	./src/main/java/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	1160	1172
+		532	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1099	1110
+		533	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1201	1213
+		531	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1299	1310
+		534	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1401	1413
+	CloneClass	199
+		465	./src/main/java/org/jfree/chart/renderer/category/LayeredBarRenderer.java	301	320
+		464	./src/main/java/org/jfree/chart/renderer/category/WaterfallBarRenderer.java	398	417
+	CloneClass	108
+		257	./src/main/java/org/jfree/chart/renderer/category/GradientBarPainter.java	106	160
+		256	./src/main/java/org/jfree/chart/renderer/xy/GradientXYBarPainter.java	105	159
+	CloneClass	113
+		267	./src/main/java/org/jfree/chart/renderer/category/GradientBarPainter.java	160	193
+		266	./src/main/java/org/jfree/chart/renderer/xy/GradientXYBarPainter.java	159	191
+	CloneClass	120
+		281	./src/main/java/org/jfree/chart/renderer/category/GradientBarPainter.java	292	308
+		280	./src/main/java/org/jfree/chart/renderer/xy/GradientXYBarPainter.java	290	306
+	CloneClass	123
+		287	./src/main/java/org/jfree/chart/renderer/category/GradientBarPainter.java	321	337
+		288	./src/main/java/org/jfree/chart/renderer/xy/GradientXYBarPainter.java	319	335
+	CloneClass	230
+		549	./src/main/java/org/jfree/chart/plot/CombinedDomainCategoryPlot.java	202	216
+		551	./src/main/java/org/jfree/chart/plot/CombinedDomainXYPlot.java	341	355
+		552	./src/main/java/org/jfree/chart/plot/CombinedRangeCategoryPlot.java	194	208
+		550	./src/main/java/org/jfree/chart/plot/CombinedRangeXYPlot.java	273	287
+	CloneClass	147
+		341	./src/main/java/org/jfree/chart/plot/PiePlot.java	2469	2485
+		342	./src/main/java/org/jfree/chart/plot/PiePlot3D.java	318	334
+	CloneClass	168
+		387	./src/test/java/org/jfree/chart/entity/LegendItemEntityTest.java	68	86
+		388	./src/test/java/org/jfree/chart/entity/PieSectionEntityTest.java	69	87
+		389	./src/test/java/org/jfree/chart/entity/XYItemEntityTest.java	67	85
+	CloneClass	219
+		517	./src/test/java/org/jfree/data/gantt/SlidingGanttCategoryDatasetTest.java	62	70
+		516	./src/test/java/org/jfree/data/gantt/SlidingGanttCategoryDatasetTest.java	153	161
+	CloneClass	81
+		197	./src/main/java/org/jfree/chart/renderer/category/AreaRenderer.java	160	193
+		198	./src/main/java/org/jfree/chart/renderer/category/BarRenderer.java	920	952
+		196	./src/main/java/org/jfree/chart/renderer/category/BoxAndWhiskerRenderer.java	454	485
+	CloneClass	209
+		496	./src/main/java/org/jfree/data/statistics/DefaultMultiValueCategoryDataset.java	200	218
+		495	./src/main/java/org/jfree/data/statistics/DefaultMultiValueCategoryDataset.java	229	247
+	CloneClass	218
+		515	./src/main/java/org/jfree/chart/text/TextUtils.java	372	400
+		514	./src/main/java/org/jfree/chart/text/TextUtils.java	592	620
+	CloneClass	96
+		232	./src/main/java/org/jfree/chart/title/TextTitle.java	552	568
+		233	./src/main/java/org/jfree/chart/title/TextTitle.java	626	642
+	CloneClass	98
+		236	./src/main/java/org/jfree/chart/title/TextTitle.java	568	587
+		237	./src/main/java/org/jfree/chart/title/TextTitle.java	642	661
+	CloneClass	159
+		365	./src/main/java/org/jfree/chart/axis/CategoryAxis.java	768	780
+		366	./src/main/java/org/jfree/chart/axis/CategoryAxis.java	802	814
+	CloneClass	109
+		259	./src/main/java/org/jfree/data/ComparableObjectSeries.java	217	247
+		258	./src/main/java/org/jfree/data/xy/XYSeries.java	508	538
+	CloneClass	15
+		34	./src/test/java/org/jfree/chart/renderer/xy/XYBarRendererTest.java	255	266
+		33	./src/test/java/org/jfree/chart/renderer/xy/XYBarRendererTest.java	310	321
+	CloneClass	139
+		324	./src/main/java/org/jfree/chart/axis/LogAxis.java	601	635
+		323	./src/main/java/org/jfree/chart/axis/LogAxis.java	659	693
+	CloneClass	151
+		349	./src/main/java/org/jfree/chart/axis/LogAxis.java	728	746
+		350	./src/main/java/org/jfree/chart/axis/LogAxis.java	797	814
+	CloneClass	21
+		45	./src/main/java/org/jfree/chart/renderer/category/BarRenderer.java	772	791
+		46	./src/main/java/org/jfree/chart/renderer/category/LevelRenderer.java	199	216
+	CloneClass	24
+		51	./src/main/java/org/jfree/chart/renderer/category/BarRenderer.java	791	810
+		52	./src/main/java/org/jfree/chart/renderer/category/LevelRenderer.java	216	234
+	CloneClass	30
+		65	./src/main/java/org/jfree/chart/renderer/category/BarRenderer.java	843	858
+		64	./src/main/java/org/jfree/chart/renderer/category/LevelRenderer.java	268	282
+	CloneClass	129
+		299	./src/test/java/org/jfree/data/xy/VectorSeriesTest.java	98	114
+		301	./src/test/java/org/jfree/data/xy/XIntervalSeriesTest.java	97	113
+		300	./src/test/java/org/jfree/data/xy/YIntervalSeriesTest.java	97	113
+	CloneClass	134
+		314	./src/test/java/org/jfree/data/xy/VectorSeriesTest.java	215	223
+		312	./src/test/java/org/jfree/data/xy/XIntervalSeriesTest.java	213	221
+		313	./src/test/java/org/jfree/data/xy/YIntervalSeriesTest.java	213	221
+	CloneClass	43
+		94	./src/main/java/org/jfree/chart/plot/CombinedRangeCategoryPlot.java	247	279
+		93	./src/main/java/org/jfree/chart/plot/CombinedRangeXYPlot.java	317	350
+	CloneClass	50
+		114	./src/main/java/org/jfree/chart/plot/CombinedRangeCategoryPlot.java	285	296
+		113	./src/main/java/org/jfree/chart/plot/CombinedRangeXYPlot.java	357	368
+	CloneClass	84
+		204	./src/main/java/org/jfree/chart/axis/DateAxis.java	761	787
+		203	./src/main/java/org/jfree/chart/axis/PeriodAxis.java	971	998
+	CloneClass	150
+		348	./src/test/java/org/jfree/data/DefaultKeyedValues2DTest.java	267	277
+		347	./src/test/java/org/jfree/data/category/DefaultCategoryDatasetTest.java	245	255
+	CloneClass	229
+		547	./src/main/java/org/jfree/chart/plot/CombinedDomainXYPlot.java	341	356
+		548	./src/main/java/org/jfree/chart/plot/CombinedRangeCategoryPlot.java	194	210
+	CloneClass	214
+		506	./src/main/java/org/jfree/chart/renderer/category/StandardBarPainter.java	84	107
+		505	./src/main/java/org/jfree/chart/renderer/xy/StandardXYBarPainter.java	83	106
+	CloneClass	106
+		252	./src/test/java/org/jfree/chart/renderer/category/BarRendererTest.java	297	310
+		253	./src/test/java/org/jfree/chart/renderer/category/LineAndShapeRendererTest.java	284	297
+	CloneClass	132
+		306	./src/main/java/org/jfree/chart/renderer/category/GradientBarPainter.java	240	279
+		307	./src/main/java/org/jfree/chart/renderer/category/StandardBarPainter.java	154	193
+		308	./src/main/java/org/jfree/chart/renderer/xy/GradientXYBarPainter.java	238	277
+		309	./src/main/java/org/jfree/chart/renderer/xy/StandardXYBarPainter.java	153	192
+	CloneClass	53
+		120	./src/main/java/org/jfree/chart/ChartPanel.java	2615	2631
+		119	./src/main/java/org/jfree/chart/util/ExportUtils.java	132	148
+		121	./src/main/java/org/jfree/chart/util/ExportUtils.java	180	196
+	CloneClass	121
+		283	./src/test/java/org/jfree/chart/renderer/category/StackedAreaRendererTest.java	67	88
+		282	./src/test/java/org/jfree/chart/renderer/category/StackedBarRendererTest.java	127	148
+	CloneClass	211
+		500	./src/test/java/org/jfree/chart/renderer/RendererUtilsTest.java	81	108
+		499	./src/test/java/org/jfree/chart/renderer/RendererUtilsTest.java	144	171
+	CloneClass	75
+		183	./src/main/java/org/jfree/chart/title/PaintScaleLegend.java	599	608
+		184	./src/main/java/org/jfree/chart/title/PaintScaleLegend.java	624	633
+	CloneClass	80
+		195	./src/main/java/org/jfree/chart/renderer/category/AreaRenderer.java	160	205
+		194	./src/main/java/org/jfree/chart/renderer/category/BoxAndWhiskerRenderer.java	454	497
+	CloneClass	42
+		92	./src/main/java/org/jfree/chart/plot/CombinedDomainXYPlot.java	341	355
+		91	./src/main/java/org/jfree/chart/plot/CombinedRangeXYPlot.java	273	287
+	CloneClass	49
+		112	./src/main/java/org/jfree/chart/plot/CombinedDomainXYPlot.java	406	423
+		111	./src/main/java/org/jfree/chart/plot/CombinedRangeXYPlot.java	341	361
+	CloneClass	56
+		135	./src/main/java/org/jfree/chart/plot/CombinedDomainXYPlot.java	490	514
+		134	./src/main/java/org/jfree/chart/plot/CombinedRangeXYPlot.java	428	453
+	CloneClass	29
+		62	./src/main/java/org/jfree/chart/ChartFactory.java	403	471
+		63	./src/main/java/org/jfree/chart/ChartFactory.java	524	592
+	CloneClass	38
+		80	./src/main/java/org/jfree/chart/ChartFactory.java	681	701
+		81	./src/main/java/org/jfree/chart/ChartFactory.java	814	834
+	CloneClass	86
+		207	./src/main/java/org/jfree/chart/title/ShortTextTitle.java	86	125
+		208	./src/main/java/org/jfree/chart/title/TextTitle.java	475	514
+	CloneClass	70
+		168	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	138	149
+		169	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	159	170
+		166	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	180	191
+		167	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	200	211
+	CloneClass	105
+		250	./src/test/java/org/jfree/chart/renderer/category/AbstractCategoryItemRendererTest.java	312	326
+		251	./src/test/java/org/jfree/chart/renderer/category/LineAndShapeRendererTest.java	276	290
+	CloneClass	100
+		241	./src/main/java/org/jfree/chart/renderer/category/BarRenderer.java	1154	1191
+		240	./src/main/java/org/jfree/chart/renderer/xy/XYBarRenderer.java	991	1028
+	CloneClass	103
+		247	./src/main/java/org/jfree/chart/renderer/category/BarRenderer.java	1202	1302
+		246	./src/main/java/org/jfree/chart/renderer/xy/XYBarRenderer.java	1039	1138
+	CloneClass	136
+		317	./src/main/java/org/jfree/chart/axis/LogarithmicAxis.java	839	867
+		318	./src/main/java/org/jfree/chart/axis/SymbolAxis.java	594	621
+	CloneClass	175
+		408	./src/main/java/org/jfree/chart/renderer/category/StackedAreaRenderer.java	281	299
+		409	./src/main/java/org/jfree/chart/renderer/xy/StackedXYAreaRenderer2.java	279	297
+	CloneClass	200
+		466	./src/main/java/org/jfree/chart/renderer/category/StackedAreaRenderer.java	472	487
+		467	./src/main/java/org/jfree/chart/renderer/xy/StackedXYAreaRenderer2.java	505	520
+	CloneClass	68
+		162	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	138	151
+		161	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	200	213
+	CloneClass	144
+		335	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	1418	1426
+		336	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	1472	1480
+	CloneClass	126
+		294	./src/main/java/org/jfree/chart/labels/BoxAndWhiskerToolTipGenerator.java	120	129
+		293	./src/main/java/org/jfree/chart/labels/BoxAndWhiskerXYToolTipGenerator.java	140	149
+	CloneClass	224
+		528	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1099	1111
+		529	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1201	1214
+		527	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1299	1311
+		530	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1401	1414
+	CloneClass	250
+		595	./src/main/java/org/jfree/chart/renderer/category/GanttRenderer.java	517	531
+		597	./src/main/java/org/jfree/chart/renderer/category/LayeredBarRenderer.java	305	319
+		596	./src/main/java/org/jfree/chart/renderer/category/WaterfallBarRenderer.java	402	416
+	CloneClass	95
+		231	./src/main/java/org/jfree/chart/block/FlowArrangement.java	137	162
+		230	./src/main/java/org/jfree/chart/block/GridArrangement.java	115	145
+	CloneClass	117
+		275	./src/test/java/org/jfree/data/time/TimeSeriesCollectionTest.java	444	453
+		274	./src/test/java/org/jfree/data/time/TimeSeriesTest.java	1169	1178
+	CloneClass	181
+		424	./src/main/java/org/jfree/data/category/DefaultCategoryDataset.java	395	419
+		425	./src/test/java/org/jfree/data/general/TestIntervalCategoryDataset.java	378	402
+	CloneClass	239
+		573	./src/main/java/org/jfree/chart/renderer/category/BoxAndWhiskerRenderer.java	532	546
+		574	./src/main/java/org/jfree/chart/renderer/category/LayeredBarRenderer.java	144	158
+	CloneClass	173
+		404	./src/test/java/org/jfree/data/category/DefaultIntervalCategoryDatasetTest.java	244	256
+		405	./src/test/java/org/jfree/data/category/DefaultIntervalCategoryDatasetTest.java	283	295
+	CloneClass	164
+		379	./src/test/java/org/jfree/chart/urls/CustomCategoryURLGeneratorTest.java	65	79
+		378	./src/test/java/org/jfree/chart/urls/CustomXYURLGeneratorTest.java	68	82
+	CloneClass	171
+		399	./src/test/java/org/jfree/chart/urls/CustomCategoryURLGeneratorTest.java	92	104
+		400	./src/test/java/org/jfree/chart/urls/CustomXYURLGeneratorTest.java	95	107
+	CloneClass	174
+		407	./src/test/java/org/jfree/chart/urls/CustomCategoryURLGeneratorTest.java	144	163
+		406	./src/test/java/org/jfree/chart/urls/CustomXYURLGeneratorTest.java	146	165
+	CloneClass	44
+		96	./src/main/java/org/jfree/data/time/TimeSeriesCollection.java	603	621
+		95	./src/main/java/org/jfree/data/time/TimeSeriesCollection.java	640	658
+	CloneClass	204
+		474	./src/test/java/org/jfree/chart/annotations/XYBoxAnnotationTest.java	177	197
+		475	./src/test/java/org/jfree/chart/annotations/XYTitleAnnotationTest.java	134	154
+	CloneClass	216
+		509	./src/test/java/org/jfree/chart/plot/CategoryPlotTest.java	469	484
+		510	./src/test/java/org/jfree/chart/plot/PiePlotTest.java	397	412
+	CloneClass	16
+		35	./src/main/java/org/jfree/chart/plot/CombinedDomainCategoryPlot.java	202	216
+		36	./src/main/java/org/jfree/chart/plot/CombinedRangeCategoryPlot.java	194	208
+	CloneClass	248
+		592	./src/main/java/org/jfree/data/statistics/Regression.java	79	98
+		591	./src/main/java/org/jfree/data/statistics/Regression.java	123	142
+	CloneClass	9
+		22	./src/main/java/org/jfree/data/statistics/Regression.java	166	185
+		21	./src/main/java/org/jfree/data/statistics/Regression.java	210	229
+	CloneClass	169
+		390	./src/test/java/org/jfree/chart/entity/CategoryItemEntityTest.java	72	89
+		391	./src/test/java/org/jfree/chart/entity/CategoryLabelEntityTest.java	72	89
+		392	./src/test/java/org/jfree/chart/entity/TickLabelEntityTest.java	65	82
+	CloneClass	1
+		3	./src/main/java/org/jfree/chart/renderer/category/CategoryItemRenderer.java	223	491
+		2	./src/main/java/org/jfree/chart/renderer/xy/XYItemRenderer.java	186	446
+	CloneClass	10
+		23	./src/main/java/org/jfree/chart/renderer/category/CategoryItemRenderer.java	501	746
+		24	./src/main/java/org/jfree/chart/renderer/xy/XYItemRenderer.java	463	706
+	CloneClass	23
+		50	./src/main/java/org/jfree/chart/renderer/category/CategoryItemRenderer.java	1067	1259
+		49	./src/main/java/org/jfree/chart/renderer/xy/XYItemRenderer.java	1042	1209
+	CloneClass	130
+		303	./src/main/java/org/jfree/chart/renderer/category/GradientBarPainter.java	208	227
+		302	./src/main/java/org/jfree/chart/renderer/category/StandardBarPainter.java	122	141
+	CloneClass	102
+		244	./src/main/java/org/jfree/chart/plot/PiePlot.java	2813	2829
+		245	./src/main/java/org/jfree/chart/plot/PiePlot.java	2873	2890
+	CloneClass	119
+		279	./src/main/java/org/jfree/chart/plot/PiePlot.java	3037	3073
+		278	./src/main/java/org/jfree/chart/plot/PiePlot.java	3088	3125
+	CloneClass	178
+		416	./src/main/java/org/jfree/chart/renderer/category/LineAndShapeRenderer.java	766	791
+		417	./src/main/java/org/jfree/chart/renderer/category/StatisticalLineAndShapeRenderer.java	388	413
+	CloneClass	27
+		58	./src/test/java/org/jfree/data/gantt/TaskSeriesCollectionTest.java	428	438
+		57	./src/test/java/org/jfree/data/gantt/TaskSeriesCollectionTest.java	488	497
+	CloneClass	137
+		319	./src/main/java/org/jfree/chart/ui/LCBLayout.java	85	107
+		320	./src/main/java/org/jfree/chart/ui/LCBLayout.java	165	187
+	CloneClass	141
+		327	./src/main/java/org/jfree/chart/ui/LCBLayout.java	94	116
+		328	./src/main/java/org/jfree/chart/ui/LCBLayout.java	135	157
+	CloneClass	73
+		180	./src/test/java/org/jfree/data/time/TimeSeriesTest.java	348	358
+		179	./src/test/java/org/jfree/data/time/TimeSeriesTest.java	441	451
+	CloneClass	35
+		74	./src/main/java/org/jfree/chart/block/BorderArrangement.java	222	232
+		75	./src/main/java/org/jfree/chart/block/BorderArrangement.java	389	399
+	CloneClass	79
+		193	./src/main/java/org/jfree/chart/renderer/xy/StackedXYAreaRenderer.java	589	611
+		192	./src/main/java/org/jfree/chart/renderer/xy/XYAreaRenderer2.java	380	401
+	CloneClass	5
+		11	./src/main/java/org/jfree/chart/renderer/category/LayeredBarRenderer.java	230	255
+		12	./src/main/java/org/jfree/chart/renderer/category/LayeredBarRenderer.java	361	386
+		14	./src/main/java/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	281	309
+		13	./src/main/java/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	429	457
+	CloneClass	215
+		507	./src/test/java/org/jfree/data/xy/CategoryTableXYDatasetTest.java	88	104
+		508	./src/test/java/org/jfree/data/xy/CategoryTableXYDatasetTest.java	115	131
+	CloneClass	222
+		523	./src/main/java/org/jfree/data/general/DatasetUtils.java	740	756
+		524	./src/main/java/org/jfree/data/general/DatasetUtils.java	1189	1205
+	CloneClass	39
+		83	./src/main/java/org/jfree/data/general/DatasetUtils.java	2311	2330
+		82	./src/main/java/org/jfree/data/general/DatasetUtils.java	2338	2357
+	CloneClass	176
+		410	./src/test/java/org/jfree/chart/entity/PieSectionEntityTest.java	68	87
+		411	./src/test/java/org/jfree/chart/entity/XYItemEntityTest.java	67	85
+	CloneClass	110
+		260	./src/main/java/org/jfree/chart/renderer/category/BarRenderer.java	782	804
+		261	./src/main/java/org/jfree/chart/renderer/category/BoxAndWhiskerRenderer.java	536	558
+	CloneClass	20
+		44	./src/test/java/org/jfree/chart/plot/MarkerTest.java	356	371
+		43	./src/test/java/org/jfree/chart/plot/MarkerTest.java	380	395
+	CloneClass	180
+		422	./src/main/java/org/jfree/chart/renderer/category/AreaRenderer.java	174	190
+		423	./src/main/java/org/jfree/chart/renderer/category/BarRenderer.java	933	949
+		421	./src/main/java/org/jfree/chart/renderer/category/BoxAndWhiskerRenderer.java	467	483
+		420	./src/main/java/org/jfree/chart/renderer/xy/XYBubbleRenderer.java	299	315
+	CloneClass	192
+		447	./src/test/java/org/jfree/chart/annotations/XYBoxAnnotationTest.java	93	107
+		448	./src/test/java/org/jfree/chart/annotations/XYShapeAnnotationTest.java	95	109
+	CloneClass	146
+		340	./src/main/java/org/jfree/chart/axis/DateAxis.java	1724	1747
+		339	./src/main/java/org/jfree/chart/axis/SymbolAxis.java	689	711
+	CloneClass	187
+		437	./src/main/java/org/jfree/chart/renderer/xy/StackedXYAreaRenderer2.java	295	310
+		438	./src/main/java/org/jfree/chart/renderer/xy/StackedXYAreaRenderer2.java	377	392
+	CloneClass	191
+		445	./src/main/java/org/jfree/chart/renderer/xy/StackedXYAreaRenderer2.java	327	342
+		446	./src/main/java/org/jfree/chart/renderer/xy/StackedXYAreaRenderer2.java	409	424
+	CloneClass	227
+		543	./src/main/java/org/jfree/chart/renderer/category/GanttRenderer.java	431	453
+		544	./src/main/java/org/jfree/chart/renderer/category/IntervalBarRenderer.java	179	202
+	CloneClass	140
+		326	./src/test/java/org/jfree/chart/renderer/category/StatisticalBarRendererTest.java	276	290
+		325	./src/test/java/org/jfree/chart/renderer/category/StatisticalLineAndShapeRendererTest.java	191	205
+	CloneClass	2
+		5	./src/main/java/org/jfree/chart/LegendItem.java	1041	1060
+		4	./src/main/java/org/jfree/chart/title/LegendGraphic.java	642	661
+	CloneClass	128
+		298	./src/test/java/org/jfree/data/xy/XIntervalSeriesTest.java	97	117
+		297	./src/test/java/org/jfree/data/xy/YIntervalSeriesTest.java	97	117
+	CloneClass	61
+		144	./src/test/java/org/jfree/data/xy/XIntervalSeriesTest.java	174	185
+		145	./src/test/java/org/jfree/data/xy/YIntervalSeriesTest.java	174	185
+	CloneClass	62
+		147	./src/test/java/org/jfree/data/xy/XIntervalSeriesTest.java	195	206
+		146	./src/test/java/org/jfree/data/xy/YIntervalSeriesTest.java	195	206
+	CloneClass	133
+		310	./src/test/java/org/jfree/data/xy/XIntervalSeriesTest.java	213	228
+		311	./src/test/java/org/jfree/data/xy/YIntervalSeriesTest.java	213	228
+	CloneClass	72
+		177	./src/test/java/org/jfree/data/xy/XIntervalSeriesTest.java	235	244
+		178	./src/test/java/org/jfree/data/xy/YIntervalSeriesTest.java	235	244
+	CloneClass	152
+		352	./src/main/java/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	273	319
+		351	./src/main/java/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	420	467
+	CloneClass	157
+		362	./src/main/java/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	322	368
+		361	./src/main/java/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	470	516
+	CloneClass	138
+		321	./src/main/java/org/jfree/chart/axis/SymbolAxis.java	543	561
+		322	./src/main/java/org/jfree/chart/axis/SymbolAxis.java	637	655
+	CloneClass	234
+		561	./src/main/java/org/jfree/chart/plot/CombinedDomainCategoryPlot.java	336	354
+		562	./src/main/java/org/jfree/chart/plot/CombinedDomainXYPlot.java	383	401
+	CloneClass	236
+		567	./src/main/java/org/jfree/chart/plot/CombinedDomainCategoryPlot.java	376	390
+		566	./src/main/java/org/jfree/chart/plot/CombinedDomainXYPlot.java	416	430
+	CloneClass	240
+		576	./src/main/java/org/jfree/chart/plot/CombinedDomainCategoryPlot.java	391	414
+		575	./src/main/java/org/jfree/chart/plot/CombinedDomainXYPlot.java	431	454
+	CloneClass	190
+		444	./src/main/java/org/jfree/chart/plot/PiePlot3D.java	690	720
+		443	./src/main/java/org/jfree/chart/plot/PiePlot3D.java	857	885
+	CloneClass	202
+		470	./src/main/java/org/jfree/chart/plot/PiePlot3D.java	772	802
+		471	./src/main/java/org/jfree/chart/plot/PiePlot3D.java	936	965
+	CloneClass	71
+		174	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	138	149
+		175	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	159	170
+		172	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	180	191
+		173	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	200	211
+		171	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	249	260
+		176	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	1068	1079
+		170	./src/test/java/org/jfree/data/general/DatasetUtilsTest.java	1090	1101
+	CloneClass	160
+		367	./src/main/java/org/jfree/chart/plot/CategoryPlot.java	3890	3906
+		368	./src/main/java/org/jfree/chart/plot/CategoryPlot.java	3908	3924
+	CloneClass	161
+		370	./src/test/java/org/jfree/chart/plot/MultiplePiePlotTest.java	187	204
+		369	./src/test/java/org/jfree/chart/plot/SpiderWebPlotTest.java	341	358
+	CloneClass	212
+		501	./src/main/java/org/jfree/chart/labels/BubbleXYItemLabelGenerator.java	201	235
+		502	./src/main/java/org/jfree/chart/labels/StandardXYZToolTipGenerator.java	191	225
+	CloneClass	143
+		334	./src/main/java/org/jfree/chart/renderer/category/LayeredBarRenderer.java	296	314
+		333	./src/main/java/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	326	344
+		332	./src/main/java/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	474	491
+	CloneClass	4
+		8	./src/main/java/org/jfree/chart/renderer/category/LayeredBarRenderer.java	361	392
+		10	./src/main/java/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	281	315
+		9	./src/main/java/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	429	463
+	CloneClass	201
+		468	./src/main/java/org/jfree/chart/axis/ValueAxis.java	850	867
+		469	./src/main/java/org/jfree/chart/axis/ValueAxis.java	899	916
+	CloneClass	7
+		18	./src/main/java/org/jfree/chart/plot/CategoryPlot.java	2379	2405
+		17	./src/main/java/org/jfree/chart/plot/XYPlot.java	2515	2542
+	CloneClass	14
+		32	./src/main/java/org/jfree/chart/plot/CategoryPlot.java	2568	2586
+		31	./src/main/java/org/jfree/chart/plot/XYPlot.java	2606	2625
+	CloneClass	17
+		38	./src/main/java/org/jfree/chart/plot/CategoryPlot.java	2651	2675
+		37	./src/main/java/org/jfree/chart/plot/XYPlot.java	2714	2739
+	CloneClass	22
+		47	./src/main/java/org/jfree/chart/plot/CategoryPlot.java	2749	2776
+		48	./src/main/java/org/jfree/chart/plot/XYPlot.java	2747	2774
+	CloneClass	41
+		89	./src/main/java/org/jfree/chart/plot/CategoryPlot.java	3578	3597
+		90	./src/main/java/org/jfree/chart/plot/XYPlot.java	3226	3245
+	CloneClass	58
+		139	./src/main/java/org/jfree/chart/plot/CategoryPlot.java	3631	3644
+		138	./src/main/java/org/jfree/chart/plot/XYPlot.java	3342	3354
+	CloneClass	93
+		221	./src/main/java/org/jfree/chart/plot/CategoryPlot.java	3993	4009
+		222	./src/main/java/org/jfree/chart/plot/XYPlot.java	3898	3913
+	CloneClass	112
+		265	./src/main/java/org/jfree/chart/plot/CategoryPlot.java	4215	4230
+		264	./src/main/java/org/jfree/chart/plot/XYPlot.java	4240	4253
+	CloneClass	155
+		358	./src/main/java/org/jfree/chart/plot/CategoryPlot.java	4869	4891
+		357	./src/main/java/org/jfree/chart/plot/XYPlot.java	5469	5491
+	CloneClass	158
+		363	./src/main/java/org/jfree/chart/plot/CategoryPlot.java	4969	4989
+		364	./src/main/java/org/jfree/chart/plot/XYPlot.java	5531	5550
+	CloneClass	67
+		158	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	318	371
+		157	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	466	519
+		156	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	614	667
+		159	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	762	815
+		160	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	910	963
+	CloneClass	167
+		385	./src/test/java/org/jfree/chart/entity/LegendItemEntityTest.java	68	86
+		386	./src/test/java/org/jfree/chart/entity/PieSectionEntityTest.java	69	87
+	CloneClass	244
+		583	./src/test/java/org/jfree/chart/renderer/xy/ClusteredXYBarRendererTest.java	157	179
+		584	./src/test/java/org/jfree/data/xy/DefaultIntervalXYDatasetTest.java	338	360
+	CloneClass	18
+		40	./src/test/java/org/jfree/data/xy/CategoryTableXYDatasetTest.java	177	194
+		39	./src/test/java/org/jfree/data/xy/DefaultTableXYDatasetTest.java	159	176
+	CloneClass	156
+		360	./src/test/java/org/jfree/chart/axis/LogAxisTest.java	209	223
+		359	./src/test/java/org/jfree/chart/axis/LogAxisTest.java	230	244
+	CloneClass	213
+		504	./src/test/java/org/jfree/data/time/TimeSeriesCollectionTest.java	274	288
+		503	./src/test/java/org/jfree/data/xy/XYSeriesCollectionTest.java	295	309
+	CloneClass	65
+		152	./src/main/java/org/jfree/data/category/CategoryToPieDataset.java	302	335
+		153	./src/main/java/org/jfree/data/general/DefaultPieDataset.java	312	348
+	CloneClass	59
+		140	./src/main/java/org/jfree/chart/ChartPanel.java	2613	2631
+		141	./src/main/java/org/jfree/chart/util/ExportUtils.java	178	196
+	CloneClass	37
+		79	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	201	221
+		78	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	246	266
+	CloneClass	45
+		98	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	345	362
+		97	./src/test/java/org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest.java	373	390
+	CloneClass	196
+		459	./src/main/java/org/jfree/chart/axis/DateAxis.java	1607	1630
+		457	./src/main/java/org/jfree/chart/axis/LogarithmicAxis.java	840	863
+		456	./src/main/java/org/jfree/chart/axis/NumberAxis.java	986	1009
+		458	./src/main/java/org/jfree/chart/axis/SymbolAxis.java	595	617
+	CloneClass	197
+		460	./src/test/java/org/jfree/chart/axis/NumberAxisTest.java	204	215
+		461	./src/test/java/org/jfree/chart/axis/NumberAxisTest.java	225	236
+	CloneClass	165
+		381	./src/test/java/org/jfree/chart/annotations/CategoryPointerAnnotationTest.java	85	136
+		380	./src/test/java/org/jfree/chart/annotations/XYPointerAnnotationTest.java	88	139
+	CloneClass	85
+		205	./src/main/java/org/jfree/chart/plot/XYPlot.java	3731	3749
+		206	./src/main/java/org/jfree/chart/plot/XYPlot.java	3757	3775
+	CloneClass	163
+		373	./src/test/java/org/jfree/chart/AreaChartTest.java	137	157
+		376	./src/test/java/org/jfree/chart/BarChartTest.java	109	132
+		374	./src/test/java/org/jfree/chart/LineChartTest.java	101	124
+		377	./src/test/java/org/jfree/chart/StackedAreaChartTest.java	106	127
+		375	./src/test/java/org/jfree/chart/StackedBarChartTest.java	110	133
+	CloneClass	142
+		329	./src/main/java/org/jfree/chart/ui/LCBLayout.java	94	107
+		330	./src/main/java/org/jfree/chart/ui/LCBLayout.java	135	148
+		331	./src/main/java/org/jfree/chart/ui/LCBLayout.java	174	187
+	CloneClass	246
+		587	./src/main/java/org/jfree/chart/renderer/xy/VectorRenderer.java	105	117
+		588	./src/main/java/org/jfree/chart/renderer/xy/VectorRenderer.java	160	172
+	CloneClass	242
+		580	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1079	1096
+		579	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1279	1296
+	CloneClass	245
+		586	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1096	1115
+		585	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1296	1315
+	CloneClass	0
+		0	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1142	1165
+		1	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1342	1365
+	CloneClass	237
+		568	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1199	1215
+		569	./src/main/java/org/jfree/chart/renderer/xy/AbstractXYItemRenderer.java	1399	1415
+	CloneClass	55
+		128	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	318	371
+		129	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	392	445
+		125	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	466	519
+		131	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	540	593
+		124	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	614	667
+		126	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	688	741
+		130	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	762	815
+		132	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	836	889
+		133	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	910	963
+		127	./src/test/java/org/jfree/chart/axis/DateAxisTest.java	984	1037
+	CloneClass	221
+		520	./src/main/java/org/jfree/data/xy/DefaultIntervalXYDataset.java	474	486
+		522	./src/main/java/org/jfree/data/xy/DefaultXYDataset.java	325	337
+		521	./src/main/java/org/jfree/data/xy/DefaultXYZDataset.java	373	385
+	CloneClass	94
+		227	./src/test/java/org/jfree/chart/ScatterPlotTest.java	105	126
+		228	./src/test/java/org/jfree/chart/TimeSeriesChartTest.java	104	125
+		229	./src/test/java/org/jfree/chart/XYAreaChartTest.java	104	125
+		224	./src/test/java/org/jfree/chart/XYBarChartTest.java	106	128
+		225	./src/test/java/org/jfree/chart/XYLineChartTest.java	105	126
+		226	./src/test/java/org/jfree/chart/XYStepAreaChartTest.java	104	125
+		223	./src/test/java/org/jfree/chart/XYStepChartTest.java	105	126
+	CloneClass	170
+		396	./src/test/java/org/jfree/chart/entity/CategoryItemEntityTest.java	72	88
+		397	./src/test/java/org/jfree/chart/entity/CategoryLabelEntityTest.java	72	88
+		393	./src/test/java/org/jfree/chart/entity/LegendItemEntityTest.java	68	84
+		394	./src/test/java/org/jfree/chart/entity/PieSectionEntityTest.java	69	85
+		398	./src/test/java/org/jfree/chart/entity/TickLabelEntityTest.java	65	81
+		395	./src/test/java/org/jfree/chart/entity/XYItemEntityTest.java	67	83
+	CloneClass	32
+		69	./src/main/java/org/jfree/chart/plot/CategoryPlot.java	1421	1444
+		68	./src/main/java/org/jfree/chart/plot/PolarPlot.java	1266	1289
+	CloneClass	145
+		337	./src/main/java/org/jfree/chart/renderer/xy/XYBoxAndWhiskerRenderer.java	374	394
+		338	./src/main/java/org/jfree/chart/renderer/xy/XYBoxAndWhiskerRenderer.java	514	534
+	CloneClass	148
+		343	./src/main/java/org/jfree/chart/renderer/xy/XYBoxAndWhiskerRenderer.java	396	416
+		344	./src/main/java/org/jfree/chart/renderer/xy/XYBoxAndWhiskerRenderer.java	542	561
+	CloneClass	153
+		354	./src/main/java/org/jfree/chart/renderer/xy/XYBoxAndWhiskerRenderer.java	418	440
+		353	./src/main/java/org/jfree/chart/renderer/xy/XYBoxAndWhiskerRenderer.java	565	587
+	CloneClass	184
+		431	./src/test/java/org/jfree/chart/plot/CategoryPlotTest.java	138	153
+		430	./src/test/java/org/jfree/chart/plot/XYPlotTest.java	124	139
+	CloneClass	194
+		452	./src/test/java/org/jfree/chart/plot/CategoryPlotTest.java	197	219
+		451	./src/test/java/org/jfree/chart/plot/XYPlotTest.java	177	199
+	CloneClass	203
+		473	./src/test/java/org/jfree/chart/plot/CategoryPlotTest.java	272	289
+		472	./src/test/java/org/jfree/chart/plot/XYPlotTest.java	228	245
+	CloneClass	206
+		483	./src/test/java/org/jfree/chart/plot/CategoryPlotTest.java	298	320
+		484	./src/test/java/org/jfree/chart/plot/XYPlotTest.java	268	290
+	CloneClass	8
+		20	./src/test/java/org/jfree/chart/plot/CategoryPlotTest.java	1003	1019
+		19	./src/test/java/org/jfree/chart/plot/XYPlotTest.java	1105	1121
+	CloneClass	13
+		29	./src/test/java/org/jfree/chart/plot/CategoryPlotTest.java	1030	1061
+		30	./src/test/java/org/jfree/chart/plot/XYPlotTest.java	1132	1163
+	CloneClass	114
+		268	./src/main/java/org/jfree/chart/axis/Axis.java	1370	1384
+		269	./src/main/java/org/jfree/chart/axis/Axis.java	1469	1483
+	CloneClass	116
+		272	./src/main/java/org/jfree/chart/axis/Axis.java	1385	1399
+		273	./src/main/java/org/jfree/chart/axis/Axis.java	1484	1498
+	CloneClass	118
+		276	./src/main/java/org/jfree/chart/axis/Axis.java	1400	1415
+		277	./src/main/java/org/jfree/chart/axis/Axis.java	1499	1514
