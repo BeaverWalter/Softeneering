@@ -176,10 +176,6 @@ public abstract class AbstractRenderer extends ShapeManager implements Cloneable
     /** The default outline stroke. */
     public static final Stroke DEFAULT_OUTLINE_STROKE = new BasicStroke(1.0f);
 
-    /** The default shape. */
-    public static final Shape DEFAULT_SHAPE
-            = new Rectangle2D.Double(-3.0, -3.0, 6.0, 6.0);
-
     /** The default value label font. */
     public static final Font DEFAULT_VALUE_LABEL_FONT
             = new Font("SansSerif", Font.PLAIN, 10);
@@ -271,20 +267,6 @@ public abstract class AbstractRenderer extends ShapeManager implements Cloneable
      * @since 1.0.6
      */
     private boolean autoPopulateSeriesOutlineStroke;
-
-    /** A shape list. */
-    private ShapeList shapeList;
-
-    /**
-     * A flag that controls whether or not the shapeList is auto-populated
-     * in the {@link #lookupSeriesShape(int)} method.
-     *
-     * @since 1.0.6
-     */
-    private boolean autoPopulateSeriesShape;
-
-    /** The base shape. */
-    private transient Shape defaultShape;
 
     /** Visibility of the item labels PER series. */
     private BooleanList itemLabelsVisibleList;
@@ -431,9 +413,9 @@ public abstract class AbstractRenderer extends ShapeManager implements Cloneable
         this.defaultOutlineStroke = DEFAULT_OUTLINE_STROKE;
         this.autoPopulateSeriesOutlineStroke = false;
 
-        this.shapeList = new ShapeList();
-        this.defaultShape = DEFAULT_SHAPE;
-        this.autoPopulateSeriesShape = true;
+//        this.shapeList = new ShapeList();
+//        this.defaultShape = DEFAULT_SHAPE;
+//        this.autoPopulateSeriesShape = true;
 
         this.itemLabelsVisibleList = new BooleanList();
         this.defaultItemLabelsVisible = false;
@@ -473,12 +455,12 @@ public abstract class AbstractRenderer extends ShapeManager implements Cloneable
         this.listenerList = new EventListenerList();
     }
 
-    /**
-     * Returns the drawing supplier from the plot.
-     *
-     * @return The drawing supplier.
-     */
-    public abstract DrawingSupplier getDrawingSupplier();
+//    /**
+//     * Returns the drawing supplier from the plot.
+//     *
+//     * @return The drawing supplier.
+//     */
+//    public abstract DrawingSupplier getDrawingSupplier();
 
     /**
      * Adds a {@code KEY_BEGIN_ELEMENT} hint to the graphics target.  This
@@ -1560,162 +1542,162 @@ public abstract class AbstractRenderer extends ShapeManager implements Cloneable
     public void setAutoPopulateSeriesOutlineStroke(boolean auto) {
         this.autoPopulateSeriesOutlineStroke = auto;
     }
-
-    // SHAPE
-
-    /**
-     * Returns a shape used to represent a data item.
-     * <p>
-     * The default implementation passes control to the 
-     * {@link #lookupSeriesShape(int)} method. You can override this method if 
-     * you require different behaviour.
-     *
-     * @param row  the row (or series) index (zero-based).
-     * @param column  the column (or category) index (zero-based).
-     *
-     * @return The shape (never {@code null}).
-     */
-    public Shape getItemShape(int row, int column) {
-        return lookupSeriesShape(row);
-    }
-
-    /**
-     * Returns a shape used to represent the items in a series.
-     *
-     * @param series  the series (zero-based index).
-     *
-     * @return The shape (never {@code null}).
-     *
-     * @since 1.0.6
-     */
-    public Shape lookupSeriesShape(int series) {
-
-        Shape result = getSeriesShape(series);
-        if (result == null && this.autoPopulateSeriesShape) {
-            DrawingSupplier supplier = getDrawingSupplier();
-            if (supplier != null) {
-                result = supplier.getNextShape();
-                setSeriesShape(series, result, false);
-            }
-        }
-        if (result == null) {
-            result = this.defaultShape;
-        }
-        return result;
-
-    }
-
-    /**
-     * Returns a shape used to represent the items in a series.
-     *
-     * @param series  the series (zero-based index).
-     *
-     * @return The shape (possibly {@code null}).
-     *
-     * @see #setSeriesShape(int, Shape)
-     */
-    public Shape getSeriesShape(int series) {
-        return this.shapeList.getShape(series);
-    }
-
-    /**
-     * Sets the shape used for a series and sends a {@link RendererChangeEvent}
-     * to all registered listeners.
-     *
-     * @param series  the series index (zero-based).
-     * @param shape  the shape ({@code null} permitted).
-     *
-     * @see #getSeriesShape(int)
-     */
-    public void setSeriesShape(int series, Shape shape) {
-        setSeriesShape(series, shape, true);
-    }
-
-    /**
-     * Sets the shape for a series and, if requested, sends a
-     * {@link RendererChangeEvent} to all registered listeners.
-     *
-     * @param series  the series index (zero based).
-     * @param shape  the shape ({@code null} permitted).
-     * @param notify  notify listeners?
-     *
-     * @see #getSeriesShape(int)
-     */
-    public void setSeriesShape(int series, Shape shape, boolean notify) {
-        this.shapeList.setShape(series, shape);
-        if (notify) {
-            fireChangeEvent();
-        }
-    }
-
-    /**
-     * Returns the default shape.
-     *
-     * @return The shape (never {@code null}).
-     *
-     * @see #setDefaultShape(Shape)
-     */
-    public Shape getDefaultShape() {
-        return this.defaultShape;
-    }
-
-    /**
-     * Sets the default shape and sends a {@link RendererChangeEvent} to all
-     * registered listeners.
-     *
-     * @param shape  the shape ({@code null} not permitted).
-     *
-     * @see #getDefaultShape()
-     */
-    public void setDefaultShape(Shape shape) {
-        // defer argument checking...
-        setDefaultShape(shape, true);
-    }
-
-    /**
-     * Sets the default shape and, if requested, sends a
-     * {@link RendererChangeEvent} to all registered listeners.
-     *
-     * @param shape  the shape ({@code null} not permitted).
-     * @param notify  notify listeners?
-     *
-     * @see #getDefaultShape()
-     */
-    public void setDefaultShape(Shape shape, boolean notify) {
-        Args.nullNotPermitted(shape, "shape");
-        this.defaultShape = shape;
-        if (notify) {
-            fireChangeEvent();
-        }
-    }
-
-    /**
-     * Returns the flag that controls whether or not the series shape list is
-     * automatically populated when {@link #lookupSeriesShape(int)} is called.
-     *
-     * @return A boolean.
-     *
-     * @since 1.0.6
-     *
-     * @see #setAutoPopulateSeriesShape(boolean)
-     */
-    public boolean getAutoPopulateSeriesShape() {
-        return this.autoPopulateSeriesShape;
-    }
-
-    /**
-     * Sets the flag that controls whether or not the series shape list is
-     * automatically populated when {@link #lookupSeriesShape(int)} is called.
-     *
-     * @param auto  the new flag value.
-     *
-     * @since 1.0.6
-     *
-     * @see #getAutoPopulateSeriesShape()
-     */
-    public void setAutoPopulateSeriesShape(boolean auto) {
-        this.autoPopulateSeriesShape = auto;
-    }
+//
+//    // SHAPE
+//
+//    /**
+//     * Returns a shape used to represent a data item.
+//     * <p>
+//     * The default implementation passes control to the
+//     * {@link #lookupSeriesShape(int)} method. You can override this method if
+//     * you require different behaviour.
+//     *
+//     * @param row  the row (or series) index (zero-based).
+//     * @param column  the column (or category) index (zero-based).
+//     *
+//     * @return The shape (never {@code null}).
+//     */
+//    public Shape getItemShape(int row, int column) {
+//        return lookupSeriesShape(row);
+//    }
+//
+//    /**
+//     * Returns a shape used to represent the items in a series.
+//     *
+//     * @param series  the series (zero-based index).
+//     *
+//     * @return The shape (never {@code null}).
+//     *
+//     * @since 1.0.6
+//     */
+//    public Shape lookupSeriesShape(int series) {
+//
+//        Shape result = getSeriesShape(series);
+//        if (result == null && this.autoPopulateSeriesShape) {
+//            DrawingSupplier supplier = getDrawingSupplier();
+//            if (supplier != null) {
+//                result = supplier.getNextShape();
+//                setSeriesShape(series, result, false);
+//            }
+//        }
+//        if (result == null) {
+//            result = this.defaultShape;
+//        }
+//        return result;
+//
+//    }
+//
+//    /**
+//     * Returns a shape used to represent the items in a series.
+//     *
+//     * @param series  the series (zero-based index).
+//     *
+//     * @return The shape (possibly {@code null}).
+//     *
+//     * @see #setSeriesShape(int, Shape)
+//     */
+//    public Shape getSeriesShape(int series) {
+//        return this.shapeList.getShape(series);
+//    }
+//
+//    /**
+//     * Sets the shape used for a series and sends a {@link RendererChangeEvent}
+//     * to all registered listeners.
+//     *
+//     * @param series  the series index (zero-based).
+//     * @param shape  the shape ({@code null} permitted).
+//     *
+//     * @see #getSeriesShape(int)
+//     */
+//    public void setSeriesShape(int series, Shape shape) {
+//        setSeriesShape(series, shape, true);
+//    }
+//
+//    /**
+//     * Sets the shape for a series and, if requested, sends a
+//     * {@link RendererChangeEvent} to all registered listeners.
+//     *
+//     * @param series  the series index (zero based).
+//     * @param shape  the shape ({@code null} permitted).
+//     * @param notify  notify listeners?
+//     *
+//     * @see #getSeriesShape(int)
+//     */
+//    public void setSeriesShape(int series, Shape shape, boolean notify) {
+//        this.shapeList.setShape(series, shape);
+//        if (notify) {
+//            fireChangeEvent();
+//        }
+//    }
+//
+//    /**
+//     * Returns the default shape.
+//     *
+//     * @return The shape (never {@code null}).
+//     *
+//     * @see #setDefaultShape(Shape)
+//     */
+//    public Shape getDefaultShape() {
+//        return this.defaultShape;
+//    }
+//
+//    /**
+//     * Sets the default shape and sends a {@link RendererChangeEvent} to all
+//     * registered listeners.
+//     *
+//     * @param shape  the shape ({@code null} not permitted).
+//     *
+//     * @see #getDefaultShape()
+//     */
+//    public void setDefaultShape(Shape shape) {
+//        // defer argument checking...
+//        setDefaultShape(shape, true);
+//    }
+//
+//    /**
+//     * Sets the default shape and, if requested, sends a
+//     * {@link RendererChangeEvent} to all registered listeners.
+//     *
+//     * @param shape  the shape ({@code null} not permitted).
+//     * @param notify  notify listeners?
+//     *
+//     * @see #getDefaultShape()
+//     */
+//    public void setDefaultShape(Shape shape, boolean notify) {
+//        Args.nullNotPermitted(shape, "shape");
+//        this.defaultShape = shape;
+//        if (notify) {
+//            fireChangeEvent();
+//        }
+//    }
+//
+//    /**
+//     * Returns the flag that controls whether or not the series shape list is
+//     * automatically populated when {@link #lookupSeriesShape(int)} is called.
+//     *
+//     * @return A boolean.
+//     *
+//     * @since 1.0.6
+//     *
+//     * @see #setAutoPopulateSeriesShape(boolean)
+//     */
+//    public boolean getAutoPopulateSeriesShape() {
+//        return this.autoPopulateSeriesShape;
+//    }
+//
+//    /**
+//     * Sets the flag that controls whether or not the series shape list is
+//     * automatically populated when {@link #lookupSeriesShape(int)} is called.
+//     *
+//     * @param auto  the new flag value.
+//     *
+//     * @since 1.0.6
+//     *
+//     * @see #getAutoPopulateSeriesShape()
+//     */
+//    public void setAutoPopulateSeriesShape(boolean auto) {
+//        this.autoPopulateSeriesShape = auto;
+//    }
 
     // ITEM LABEL VISIBILITY...
 
