@@ -128,6 +128,7 @@ import org.jfree.chart.labels.ItemLabelAnchor;
 import org.jfree.chart.labels.ItemLabelPosition;
 import org.jfree.chart.plot.DrawingSupplier;
 import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.renderer.ShapeManager;
 import org.jfree.chart.title.LegendTitle;
 import org.jfree.chart.ui.TextAnchor;
 import org.jfree.chart.util.BooleanList;
@@ -155,7 +156,7 @@ import org.jfree.data.ItemKey;
  * {@link PublicCloneable} interface to provide simple access to the clone 
  * method.
  */
-public abstract class AbstractRenderer implements Cloneable, Serializable {
+public abstract class AbstractRenderer extends ShapeManager implements Cloneable, Serializable {
 
     /** For serialization. */
     private static final long serialVersionUID = -828267569428206075L;
