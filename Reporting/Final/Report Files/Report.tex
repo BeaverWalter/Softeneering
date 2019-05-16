@@ -44,7 +44,8 @@ For now we plan to split up the shape setting code/function to allow more flexib
 
 \section{The Refactoring Process}
 
-\subsection{The first refactoring stage}
+\subsection[Section Title. Section Subtitle]{Refactoring Stage 1\\ {\large Extracting the shape functionality}}
+
 
 \subsubsection{Analysis}
 
@@ -70,6 +71,16 @@ Having the original (and possibly slightly changed) functionality in a separate 
 	\includegraphics[width=0.9\textwidth]{RefactorStage1Design.png}
 	\caption{an overview of the XYLineAndShapeRenderer and its dependencies, in respect to our proposed design change}
 \end{figure}
+
+To be able to pull away the current functionality from the AbstractRenderer class, we have to know if this won't cause any implications on other parts of the code. We know that AbstractRenderer (indirectly) implements parts of XYItemRenderer, so it's possible that other classes might implements those parts of XYItemRenderer in another way. We'll use the 'find implementation(s)' feature of IntelliJ; which only directed us to the implementations from AbstractRenderer.
+
+Because of this we know we can safely pull away the shape functionality from the AbstractRenderer class, as long as AbstractRenderder then extends the class which has the functionality. 
+
+\subsubsection{Exection}
+
+TODO WRITE ABOUT WHAT WE ACTUALLY DID
+
+\subsection[Section Title. Section Subtitle]{Refactoring Stage 2\\ {\large Changing the shape functionality}}
 
 \newpage
 \section{Conclusion}
