@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  16 MAY 2019 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  19 MAY 2019 23:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -215,30 +215,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-<images/RefactorStage1Design.png, id=17, 1116.17pt x 303.1325pt>
-File: images/RefactorStage1Design.png Graphic file (type png)
-<use images/RefactorStage1Design.png>
-Package pdftex.def Info: images/RefactorStage1Design.png  used on input line 71
-.
-(pdftex.def)             Requested size: 310.4979pt x 84.3261pt.
-[4 <./images/RefactorStage1Design.png (PNG copy)>] [5] [6] (./Report.aux) ) 
+<images/RefactorStage1aDesign.png, id=17, 960.58875pt x 224.84pt>
+File: images/RefactorStage1aDesign.png Graphic file (type png)
+<use images/RefactorStage1aDesign.png>
+Package pdftex.def Info: images/RefactorStage1aDesign.png  used on input line 7
+1.
+(pdftex.def)             Requested size: 310.4979pt x 72.67758pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+[4 <./images/RefactorStage1aDesign.png (PNG copy)>]
+<images/RefactorStage1bDesign.png, id=21, 844.15375pt x 224.84pt>
+File: images/RefactorStage1bDesign.png Graphic file (type png)
+<use images/RefactorStage1bDesign.png>
+Package pdftex.def Info: images/RefactorStage1bDesign.png  used on input line 8
+4.
+(pdftex.def)             Requested size: 310.4979pt x 82.70232pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+[5 <./images/RefactorStage1bDesign.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+[6] [7] (./Report.aux) ) 
 Here is how much of TeX's memory you used:
- 1514 strings out of 492982
- 21734 string characters out of 6134896
+ 1519 strings out of 492982
+ 21911 string characters out of 6134896
  79825 words of memory out of 5000000
- 5082 multiletter control sequences out of 15000+600000
+ 5086 multiletter control sequences out of 15000+600000
  8202 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,597b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
-</us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Report.pdf (6 pages, 120181 bytes).
+ 41i,6n,25p,964b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on Report.pdf (7 pages, 136369 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

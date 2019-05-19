@@ -60,7 +60,7 @@ From above mentioned behavior we can see that only a whole serie can have a shap
 
 Another general thing to note is that this class (AbstractRenderer) has a lot of functionality. We're not saying that this class is a god class, but we're also not saying that it's not a god class. Because of this it might be a good idea to consider splitting up some of the functionality of the class, particularly: the parts which are interesting for our case (functionality concerning shapes).
 
-\subsubsection{Plan}
+\subsubsection{Plan \& Execution}
 
 As we mentioned above, the AbstractRenderer class contains a lot of functionality, and that it might be a good plan to split up some of that functionality. That is what we plan to do to allow for the requested behaviour to be easily implemented. The plan is to take away the current functionality concerning shapes from the class, to put that functionality inside a separate class, which then will be used (or extended) by the AbstractRenderer class.\\ 
 
@@ -68,19 +68,50 @@ Having the original (and possibly slightly changed) functionality in a separate 
 
 \begin{figure}[H]
 \centering
-	\includegraphics[width=0.9\textwidth]{RefactorStage1Design.png}
-	\caption{an overview of the XYLineAndShapeRenderer and its dependencies, in respect to our proposed design change}
+	\includegraphics[width=0.9\textwidth]{RefactorStage1aDesign.png}
+	\caption{an overview of the AbstractXYItemRenderer and its dependencies, in respect to our proposed design change}
 \end{figure}
 
 To be able to pull away the current functionality from the AbstractRenderer class, we have to know if this won't cause any implications on other parts of the code. We know that AbstractRenderer (indirectly) implements parts of XYItemRenderer, so it's possible that other classes might implements those parts of XYItemRenderer in another way. We'll use the 'find implementation(s)' feature of IntelliJ; which only directed us to the implementations from AbstractRenderer.
 
-Because of this we know we can safely pull away the shape functionality from the AbstractRenderer class, as long as AbstractRenderder then extends the class which has the functionality. 
+Because of this we know we can safely pull away the shape functionality from the AbstractRenderer class, as long as AbstractRenderder then extends the class which has the functionality. \\
 
-\subsubsection{Exection}
+\noindent
+Now, the strange relation that exists between XYItemRenderer and AbstractXYItemRenderer also exists between CategoryItemRenderer and AbstractCategoryItemRenderer. It's important to note this since AbstractXYItemRenderer (and those classes which inherit from it) are not the only ones affected by the creation of the ShapeManager class.
 
-TODO WRITE ABOUT WHAT WE ACTUALLY DID
+\begin{figure}[H]
+\centering
+	\includegraphics[width=0.9\textwidth]{RefactorStage1bDesign.png}
+	\caption{an overview of the AbstractCategoryItemRenderer and its dependencies, in respect to our proposed design change}
+\end{figure}
 
-\subsection[Section Title. Section Subtitle]{Refactoring Stage 2\\ {\large Changing the shape functionality}}
+\subsubsection{Intermediate Conclusion}
+
+To be clear: the above mentioned refactor is done to offer some more clarity in finding the right place to add implementation. Too be able to have singular plot points have their own, new functionality will have to be added in the renderers. For this reason we pulled away the current functionality for shapes, and put it in a separate class. For future additions to the project (as mentioned in the project assignment), location the relevant pieces of existing functionality will be a lot simpler and faster.\\
+
+Other functionality could also be pulled away into separate classes, but that would be out of scope for this project.
+
+\subsection[Section Title. Section Subtitle]{Refactoring Stage 2\\ {\large Understanding the shape functionality}}
+
+\subsubsection{Analysis}
+
+To better understand why we pulled away the shape implementation from AbstractRenderer into its own separate class, we'll need to have a further understanding of how and why this functionality is (and isn't) used.
+
+We'll be honest and upfront in saying that we won't have a whole explanation of how this library works, but rather a simplified view of happens in general (with possible deeper insights in those aspects which need more explanation).\\
+
+A shape can be used for many things, but with respect to the assignment; it's used to represent a datapoint on a plot. A datapoint can be a point of its own, or it can be part of a set of datapoints (which we mostly refer to as a serie). This serie might represent a lot of things such as just simply random points, points of data which have been imported, points which represent a (mathematical) function... 
+
+However, purely in data, a shape has not much meaning. The shape itself is meant so we, the user of the library, can see these points on a screen. And when does this happen? When we export our plot (and data) to an image for example.\\
+
+This is where our overview of the workings begin. When we want to export to an image, we'll want to output some data to a buffer. The output comes from a draw function which is a central part of the core functionality, which in itself calls the draw functionality of the Plot interface (which is implemented by XYPlot and CategoryPlot among others...). These draw funtions do a lot of things, but one thing in particular: they render data items, or at least, set this process into motion. XYPlot for example has its own render function, which then in itself calls to the drawItem function of the renderer for that class instance (which would be an XYItemRenderer, which is in itself an interface, but is implemented in a lot of derived classes such as XYLineAndShapeRenderer). The drawItem functionality of XYLineAndShapeRender works with different passes: a first pass which draws the background, and a second pass which draws effective data items.\\
+
+We have now reached the point where we will effectively interact with our ShapeManager. Since XYLineAndShapeRenderer extend AbstractXYItemRenderer, which extends AbstractRenderer, which extends ShapeManager, we can now access the functionality which had been pulled away from AbstractRenderer. The second render pass will get the shape for a specific data item (which will be the same shape for all other data items of that serie) by calling getItemShape.\\
+
+getItemShape is special in 2 ways. The first way is in that it will always return the same shape for data items of the same serie (because of the deeper implementation of this function). The second way is that it is called in many other classes which are extensions of AbstractXYItemRenderer and AbstractCategoryItemRenderer; unlike the function setSeriesShape (and setItemShape, which is a function which doesn't exist (yet)).\\
+
+The function to set a specific shape for a serie, is never used in the whole project. But plots still need shapes for their data points? This is where default shapes come in play. Classes can set a default shape by either changing the value for the default shape in the constructor, or by setting a shape for the series legend and then later on requesting the shape of the data point via the shape of the legend of that serie. 
+
+
 
 \newpage
 \section{Conclusion}
