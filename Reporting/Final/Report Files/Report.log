@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  19 MAY 2019 23:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  21 MAY 2019 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -149,137 +149,112 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 20--22
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-
-Overfull \hbox (12.88954pt too wide) in paragraph at lines 37--38
-\OT1/cmr/m/n/10 flex-i-ble shape set-ting, for ex-am-ple: us-ing mul-ti-ple fun
-c-tions such as Set-SeriesShape-
- []
-
-<images/XYLineAndShapeRenderer.png, id=9, 964.60374pt x 319.1925pt>
-File: images/XYLineAndShapeRenderer.png Graphic file (type png)
-<use images/XYLineAndShapeRenderer.png>
-Package pdftex.def Info: images/XYLineAndShapeRenderer.png  used on input line 
-41.
-(pdftex.def)             Requested size: 310.4979pt x 102.74275pt.
 [2]
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
-[3 <./images/XYLineAndShapeRenderer.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+Overfull \hbox (20.58398pt too wide) in paragraph at lines 66--67
+[]\OT1/cmr/m/n/10 For ex-am-ple: in the above part we spoke specif-i-cally of t
+he func-tion getItemShape,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-<images/RefactorStage1aDesign.png, id=17, 960.58875pt x 224.84pt>
-File: images/RefactorStage1aDesign.png Graphic file (type png)
-<use images/RefactorStage1aDesign.png>
-Package pdftex.def Info: images/RefactorStage1aDesign.png  used on input line 7
-1.
-(pdftex.def)             Requested size: 310.4979pt x 72.67758pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-[4 <./images/RefactorStage1aDesign.png (PNG copy)>]
-<images/RefactorStage1bDesign.png, id=21, 844.15375pt x 224.84pt>
-File: images/RefactorStage1bDesign.png Graphic file (type png)
-<use images/RefactorStage1bDesign.png>
-Package pdftex.def Info: images/RefactorStage1bDesign.png  used on input line 8
-4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+<images/AbstractXYItemRendererBefore.png, id=20, 782.925pt x 224.84pt>
+File: images/AbstractXYItemRendererBefore.png Graphic file (type png)
+<use images/AbstractXYItemRendererBefore.png>
+Package pdftex.def Info: images/AbstractXYItemRendererBefore.png  used on input
+ line 82.
+(pdftex.def)             Requested size: 310.4979pt x 89.16934pt.
+<images/AbstractCategoryItemRendererBefore.png, id=21, 747.79375pt x 224.84pt>
+File: images/AbstractCategoryItemRendererBefore.png Graphic file (type png)
+<use images/AbstractCategoryItemRendererBefore.png>
+Package pdftex.def Info: images/AbstractCategoryItemRendererBefore.png  used on
+ input line 88.
+(pdftex.def)             Requested size: 310.4979pt x 93.35832pt.
+<images/AbstractXYItemRendererAfter.png, id=22, 1001.7425pt x 224.84pt>
+File: images/AbstractXYItemRendererAfter.png Graphic file (type png)
+<use images/AbstractXYItemRendererAfter.png>
+Package pdftex.def Info: images/AbstractXYItemRendererAfter.png  used on input 
+line 97.
+(pdftex.def)             Requested size: 310.4979pt x 69.68938pt.
+[5 <./images/AbstractXYItemRendererBefore.png (PNG copy)> <./images/AbstractCat
+egoryItemRendererBefore.png (PNG copy)>]
+<images/AbstractCategoryItemRendererAfter.png, id=26, 844.15375pt x 224.84pt>
+File: images/AbstractCategoryItemRendererAfter.png Graphic file (type png)
+<use images/AbstractCategoryItemRendererAfter.png>
+Package pdftex.def Info: images/AbstractCategoryItemRendererAfter.png  used on 
+input line 103.
 (pdftex.def)             Requested size: 310.4979pt x 82.70232pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-
- []
-
-[5 <./images/RefactorStage1bDesign.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-
- []
-
-[6] [7] (./Report.aux) ) 
+[6 <./images/AbstractXYItemRendererAfter.png (PNG copy)> <./images/AbstractCate
+goryItemRendererAfter.png (PNG copy)>] [7] [8] (./Report.aux) ) 
 Here is how much of TeX's memory you used:
- 1519 strings out of 492982
- 21911 string characters out of 6134896
+ 1525 strings out of 492982
+ 22271 string characters out of 6134896
  79825 words of memory out of 5000000
- 5086 multiletter control sequences out of 15000+600000
- 8202 words of font info for 29 fonts, out of 8000000 for 9000
+ 5090 multiletter control sequences out of 15000+600000
+ 8548 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,25p,964b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Report.pdf (7 pages, 136369 bytes).
+</usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmti10.pfb>
+Output written on Report.pdf (8 pages, 146896 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
