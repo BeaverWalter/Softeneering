@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  26 MAY 2019 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  26 MAY 2019 21:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -298,19 +298,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-<images/AbstractXYItemRendererBefore.png, id=98, 782.925pt x 224.84pt>
+<images/AbstractXYItemRendererBefore.png, id=106, 782.925pt x 224.84pt>
 File: images/AbstractXYItemRendererBefore.png Graphic file (type png)
 <use images/AbstractXYItemRendererBefore.png>
 Package pdftex.def Info: images/AbstractXYItemRendererBefore.png  used on input
  line 83.
 (pdftex.def)             Requested size: 310.4979pt x 89.16934pt.
-<images/AbstractCategoryItemRendererBefore.png, id=99, 747.79375pt x 224.84pt>
+<images/AbstractCategoryItemRendererBefore.png, id=107, 747.79375pt x 224.84pt>
+
 File: images/AbstractCategoryItemRendererBefore.png Graphic file (type png)
 <use images/AbstractCategoryItemRendererBefore.png>
 Package pdftex.def Info: images/AbstractCategoryItemRendererBefore.png  used on
  input line 89.
 (pdftex.def)             Requested size: 310.4979pt x 93.35832pt.
-<images/AbstractXYItemRendererAfter.png, id=100, 1001.7425pt x 224.84pt>
+<images/AbstractXYItemRendererAfter.png, id=108, 1001.7425pt x 224.84pt>
 File: images/AbstractXYItemRendererAfter.png Graphic file (type png)
 <use images/AbstractXYItemRendererAfter.png>
 Package pdftex.def Info: images/AbstractXYItemRendererAfter.png  used on input 
@@ -330,7 +331,7 @@ l.101
 l.101 
        <./images/AbstractXYItemRendererBefore.png (PNG copy)> <./images/Abstrac
 tCategoryItemRendererBefore.png (PNG copy)>]
-<images/AbstractCategoryItemRendererAfter.png, id=107, 844.15375pt x 224.84pt>
+<images/AbstractCategoryItemRendererAfter.png, id=115, 844.15375pt x 224.84pt>
 File: images/AbstractCategoryItemRendererAfter.png Graphic file (type png)
 <use images/AbstractCategoryItemRendererAfter.png>
 Package pdftex.def Info: images/AbstractCategoryItemRendererAfter.png  used on 
@@ -341,54 +342,118 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
 [6pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.130 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{figure.4}) has been already used, duplicate ignored
+l.120 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.130 \newpage
-               <./images/AbstractXYItemRendererAfter.png (PNG copy)> <./images/
-AbstractCategoryItemRendererAfter.png (PNG copy)>] [7] [8] (./Report.bbl
+l.120 
+       <./images/AbstractXYItemRendererAfter.png (PNG copy)> <./images/Abstract
+CategoryItemRendererAfter.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+
+Overfull \hbox (8.81534pt too wide) in paragraph at lines 138--139
+[]\OT1/cmr/m/n/10 For ex-am-ple; some other pack-ages seem to have gained some 
+classes (chart.axis)
+ []
+
+[7]
+<images/coverage/BEFORE.png, id=127, 923.45pt x 1927.2pt>
+File: images/coverage/BEFORE.png Graphic file (type png)
+<use images/coverage/BEFORE.png>
+Package pdftex.def Info: images/coverage/BEFORE.png  used on input line 143.
+(pdftex.def)             Requested size: 241.49895pt x 504.00085pt.
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.147 \newpage
+               <./images/coverage/BEFORE.png>]
+<images/coverage/AFTER.png, id=135, 923.45pt x 1927.2pt>
+File: images/coverage/AFTER.png Graphic file (type png)
+<use images/coverage/AFTER.png>
+Package pdftex.def Info: images/coverage/AFTER.png  used on input line 150.
+(pdftex.def)             Requested size: 241.49895pt x 504.00085pt.
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.157 \newpage
+               <./images/coverage/AFTER.png>] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+ []
+
+[11] [12] (./Report.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 11.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 139.
-
-[9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+ [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
  (./Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 139.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 139.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: C21967C426B5EB57745EDC41DF921AE0;1050.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
+(rerunfilecheck)             Checksum: 6DFC018D5235DEC70BC191247B373E7A;1196.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 5155 strings out of 492982
- 76850 string characters out of 6134896
+ 5177 strings out of 492982
+ 77260 string characters out of 6134896
  160562 words of memory out of 5000000
- 8664 multiletter control sequences out of 15000+600000
+ 8674 multiletter control sequences out of 15000+600000
  8716 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,6n,28p,964b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,6n,28p,992b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Report.pdf (9 pages, 162816 bytes).
+Output written on Report.pdf (13 pages, 396386 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 199 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
 

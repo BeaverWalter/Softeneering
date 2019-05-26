@@ -72,7 +72,7 @@ Because of this, in our opinion, the project does not need refactoring to allow 
 
 Nevertheless, we'll try and find more opportunities to restructure the project to allow for more ease of use.
 
-\subsection{Pulling away the shape functionality}
+\subsubsection{Pulling away the shape functionality}
 
 While we think that the shape functionality itself does not need changing to allow for the requested features, we do think that it is not easy for people who are not familiar with the project to effectively find where the functionality of the shapes resides (which is in the AbstractRenderer class).\\
 
@@ -107,16 +107,25 @@ As such, the following are diagrams of how our proposed implementation is for Ab
 
 To reiterate; we want to perform this refactor purely for the sake of clarity, to help our (hypothetical) customer with figuring out where he should start with the implementation of his new functionality.
 
-\subsection{Risks}
+\subsubsection{Risks}
 
 Since we simply want to pull away the functionality, and put it in a class from which the original class will extend, we effectively make sure that our original class doesn't change (since a compiled version will use flattened versions for classes, having the original class extend from the class with the functionality, makes it so that our original class (which is AbstractRenderer) keeps the functionality which we pulled away).\\
 
 As such it fairly clear that there aren't much risks involved with performing this refactor. Nevertheless, we should at least a) check with an IDE whether we have created errors and b) rerun the existing test suite. If the test suite fails, there is a problem. However, if it succeeds this can mean either that everything still works, or that the existing test suite is not capable and produced a false positive. Nevertheless, we'll assume that we started with a stable version of the library, which has a capable test suite.
 
 
+\subsection{Other possibilities}
+
+Now that we know that we don't need to refactor the project \textbf{to allow for the requested funtionality}, we can go looking at what can be optimized in the general sense of refactoring. But this raises another problem. Since we localized the current functionality (and the place where the future functionality would or could be placed) of the project to being a very precise spot, the effective code scope of this assignment has been greatly reduced. Either we try to refactor the functionality which we plan to extract from AbstractRenderer, or we expand our scope.\\
+
+After some hefty discussing, we agreed that expanding our scope, would make the scope drift too far from the assignment. Thus, we'll initially extract the shape functionality from the AbstractRenderer, after which we look how this extracted functionality can be further refactored.
+
+
 \section{Management}
 
+Due to the nature of our workflow, you might already have guessed that there is not much planning and managing to do on with our current plan. The greater part of what we did was mostly discussing whether what we were doing was the right thing to do.\\
 
+In other cases using a Ghantt or Pert chart might be a usefull tool, but in our case the work which has to be done should only take a mere minutes, since it's mostly cut and paste work. Nevertheless this doesn't mean that we shouldn't have to check the changes that we made.
 
 \section{Restructuring}
 
@@ -124,13 +133,43 @@ As such it fairly clear that there aren't much risks involved with performing th
 
 \subsubsection{Results}
 
+We ran coverage reports before and after we performed our shape functionality extraction (moved them to our ShapeManager class), which gave us some surprising results. While we didn't expect much of the coverage to change (since in theory almost everything stays the same) except for some minor details concerning the classes/packages which were directly linked to AbstractRenderer, but the results show us some strange changes.\\
+
+For example; some other packages seem to have gained some classes (chart.axis) while other packages seem to have lost some classes (data.json, data.json.impl, chart.text)
+
+\newpage
+\begin{figure}[H]
+\centering
+	\includegraphics[width=0.7\textwidth]{coverage/BEFORE.png}
+	\caption{coverage before extraction}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\centering
+	\includegraphics[width=0.7\textwidth]{coverage/AFTER.png}
+	\caption{coverage after extraction}
+\end{figure}
+
 \subsection{Testing}
 
 
 \newpage
 \section{Conclusion}
 
-We want to begin our conclusion with a well known saying: "If it aint broke, don't fix it." The problem with this quote is that it is often used as an excuse for not touching a working piece of software, which may still be broken in some way.\cite{mps}
+We want to begin our conclusion with a well known saying: "If it aint broke, don't fix it." The problem with this quote is that it is often used as an excuse for not touching a working piece of software, which may still be broken in some way.\cite{mps}\\ 
+
+The second thing we want to mention in our conclusion is yet again our scope. Simply said, we had to refactor the project as to allow the requested functionality to be implemented. So the first (big) question we asked ourselves was: what should be refactored to allow for this functionality to be implemented? When we finally figured out how the system worked, our first remark was: \textit{this project doesn't need to be refactored to allow for the requested functionality}.\\
+
+But this doesn't mean that everything in the system is optimal. So since our first step was to 'refactor the system as to allow for the requested behavior', the second step would be 'check whether the system (within our working scope) has other optimization we can realize'. So after evaluating whether our scope had to be expanded (which we eventually didn't), we began perfoming some analysis techniques on this extracted functionality.
+
+\subsection{Remarks}
+
+For us, this project consisted mostly of discussing what might be the right thing to do in this case. We came to a fairly quick conclusion that we thought the project should not be refactored to allow for the requested behaviour. Of course, this seemed a bit strange to us, so there was a lot of discussing whether or not that was the right thing to do. We opted to make the functionality concerning shapes more visible to anyone who would actually want to implement the requested functionality. But this was a mere cut and paste job for us. So once again we discussed whether this was enough, was this all we could do to try and achieve our goal.\\
+
+We tried to stand in the shoes of the 'customer'. Whether he would be satisfied if we presented him our final result. It was a tricky situation, because from the customers point of view, he wants to receive the library in a state where it is possible for him (or someone else) to actually implement those features, but we would be there to tell him: "It is already possible. It might not be that clear that it is already possible, so made it a bit clearer." So eventually we decided that our hypothetical customer would indeed be satisfied.\\
+
+There has been a lot of discussing, about a lot of things, some of them being: what is our scope, when are we not doing enough, when are we going out of scope... But one thing in particular: What is the line between refactoring (preparing the project to allow for the implementation of the requested features) and implementing (actually readying the code for this implementation). We agreed that it was not our place to decide how a third person would or should implement those features, which led to being our biggest holdback in  doing things during this project. Yes, we could have made a database interface to \textit{portray that reading shapes from a database would be fairly easy}, or we could have effectively implemented some version of the getItemShape (and setItemShape), but other than serving as unfinished examples just to prove our point it would be useless. If our explanation cannot prove our point, than we probably are just explaining it wrong.
 
 \newpage
 \bibliography{mybibfile}
