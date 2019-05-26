@@ -1,6 +1,7 @@
 \documentclass{article}
-\usepackage{graphicx}
+\usepackage{graphicx, hyperref}
 \usepackage{float}
+\bibliographystyle{elsarticle-num}
 
 \graphicspath{ {images/} }
 
@@ -67,7 +68,7 @@ For example: in the above part we spoke specifically of the function getItemShap
 
 getItemShape in this case serves purely as a passthrough function, where it is explicitly mentioned in the documentation for the function that if other behaviour is required, the users should override the existing function. This however, doesn't seem to happen anywhere in the project and thus we can safely say that getItemShape effectively is the same as lookupSerieShape (which in itself calls getSeriesShape).\\
 
-Because of this, in our opinion, the project does not refactoring to allow for the requested features, not even to make the implemenation easier, as implementing it would only require the getItemShape function to be overridden correctly. One could even write an implementation for getItemShape where they perform a specific database query (based on the row and column parameter of getItemShape) to request a specific shape from a database.\\
+Because of this, in our opinion, the project does not need refactoring to allow for the requested features, not even to make the implementation easier, as implementing it would only require the getItemShape function to be overridden correctly. One could even write an implementation for getItemShape where they perform a specific database query (based on the row and column parameter of getItemShape) to request a specific shape from a database.\\
 
 Nevertheless, we'll try and find more opportunities to restructure the project to allow for more ease of use.
 
@@ -115,15 +116,24 @@ As such it fairly clear that there aren't much risks involved with performing th
 
 \section{Management}
 
-\section{Refactoring}
 
 
+\section{Restructuring}
 
-\subsection[Section Title. Section Subtitle]{Refactoring Stage 2\\ {\large Understanding the shape functionality}}
+\subsection{Refactoring}
+
+\subsubsection{Results}
+
+\subsection{Testing}
 
 
 \newpage
 \section{Conclusion}
+
+We want to begin our conclusion with a well known saying: "If it aint broke, don't fix it." The problem with this quote is that it is often used as an excuse for not touching a working piece of software, which may still be broken in some way.\cite{mps}
+
+\newpage
+\bibliography{mybibfile}
 
 
 \end{document}

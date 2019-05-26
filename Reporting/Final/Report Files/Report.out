@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.0}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.0.1}{Context}{section.0}% 2
+\BOOKMARK [2][-]{subsection.0.2}{Do reengineer, do not implement}{section.0}% 3
+\BOOKMARK [2][-]{subsection.0.3}{Problem at hand}{section.0}% 4
+\BOOKMARK [1][-]{section.1}{Preparation}{}% 5
+\BOOKMARK [2][-]{subsection.1.1}{Scope}{section.1}% 6
+\BOOKMARK [1][-]{section.2}{Design Recovery}{}% 7
+\BOOKMARK [2][-]{subsection.2.1}{Analysis of the current design}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Design}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{The initial idea}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Pulling away the shape functionality}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Risks}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{Management}{}% 13
+\BOOKMARK [1][-]{section.5}{Restructuring}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Refactoring}{section.5}% 15
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Results}{subsection.5.1}% 16
+\BOOKMARK [2][-]{subsection.5.2}{Testing}{section.5}% 17
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 18
