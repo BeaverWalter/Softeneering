@@ -32,6 +32,21 @@ public abstract class ShapeManager {
     /** The base shape. */
     protected transient Shape defaultShape;
 
+    /**
+     * The per-series legend shape settings.
+     *
+     * @since 1.0.11
+     */
+    protected ShapeList legendShapeList;
+
+    /**
+     * The base shape for legend items.  If this is {@code null}, the
+     * series shape will be used.
+     *
+     * @since 1.0.11
+     */
+    protected transient Shape defaultLegendShape;
+
     /** Storage for registered change listeners. */
     protected transient EventListenerList listenerList;
 
@@ -42,6 +57,9 @@ public abstract class ShapeManager {
         this.shapeList = new ShapeList();
         this.defaultShape = DEFAULT_SHAPE;
         this.autoPopulateSeriesShape = true;
+
+        this.legendShapeList = new ShapeList();
+        this.defaultLegendShape = null;
 
         this.listenerList = new EventListenerList();
     }
@@ -207,6 +225,81 @@ public abstract class ShapeManager {
      */
     public void setAutoPopulateSeriesShape(boolean auto) {
         this.autoPopulateSeriesShape = auto;
+    }
+
+
+    /**
+     * Performs a lookup for the legend shape.
+     *
+     * @param series  the series index.
+     *
+     * @return The shape (possibly {@code null}).
+     *
+     * @since 1.0.11
+     */
+    public Shape lookupLegendShape(int series) {
+        Shape result = getLegendShape(series);
+        if (result == null) {
+            result = this.defaultLegendShape;
+        }
+        if (result == null) {
+            result = lookupSeriesShape(series);
+        }
+        return result;
+    }
+
+    /**
+     * Returns the legend shape defined for the specified series (possibly
+     * {@code null}).
+     *
+     * @param series  the series index.
+     *
+     * @return The shape (possibly {@code null}).
+     *
+     * @see #lookupLegendShape(int)
+     *
+     * @since 1.0.11
+     */
+    public Shape getLegendShape(int series) {
+        return this.legendShapeList.getShape(series);
+    }
+
+    /**
+     * Sets the shape used for the legend item for the specified series, and
+     * sends a {@link RendererChangeEvent} to all registered listeners.
+     *
+     * @param series  the series index.
+     * @param shape  the shape ({@code null} permitted).
+     *
+     * @since 1.0.11
+     */
+    public void setLegendShape(int series, Shape shape) {
+        this.legendShapeList.setShape(series, shape);
+        fireChangeEvent();
+    }
+
+    /**
+     * Returns the default legend shape, which may be {@code null}.
+     *
+     * @return The default legend shape.
+     *
+     * @since 1.0.11
+     */
+    public Shape getDefaultLegendShape() {
+        return this.defaultLegendShape;
+    }
+
+    /**
+     * Sets the default legend shape and sends a
+     * {@link RendererChangeEvent} to all registered listeners.
+     *
+     * @param shape  the shape ({@code null} permitted).
+     *
+     * @since 1.0.11
+     */
+    public void setDefaultLegendShape(Shape shape) {
+        this.defaultLegendShape = shape;
+        fireChangeEvent();
     }
 
 
