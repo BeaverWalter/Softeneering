@@ -131,11 +131,13 @@ In other cases using a Ghantt or Pert chart might be a usefull tool, but in our 
 
 \subsection{Refactoring}
 
-\subsubsection{Results}
+\subsubsection{Results - Duplicate Code}
+
+\subsubsection{Results - Coverage}
 
 We ran coverage reports before and after we performed our shape functionality extraction (moved them to our ShapeManager class), which gave us some surprising results. While we didn't expect much of the coverage to change (since in theory almost everything stays the same) except for some minor details concerning the classes/packages which were directly linked to AbstractRenderer, but the results show us some strange changes.\\
 
-For example; some other packages seem to have gained some classes (chart.axis) while other packages seem to have lost some classes (data.json, data.json.impl, chart.text)
+For example; some other packages seem to have gained some classes (chart.axis) while other packages seem to have lost some classes (data.json, data.json.impl, chart.text).
 
 \newpage
 \begin{figure}[H]
