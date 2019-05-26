@@ -133,6 +133,8 @@ In other cases using a Ghantt or Pert chart might be a usefull tool, but in our 
 
 \subsubsection{Results - Duplicate Code}
 
+
+
 \subsubsection{Results - Coverage}
 
 We ran coverage reports before and after we performed our shape functionality extraction (moved them to our ShapeManager class), which gave us some surprising results. While we didn't expect much of the coverage to change (since in theory almost everything stays the same) except for some minor details concerning the classes/packages which were directly linked to AbstractRenderer, but the results show us some strange changes.\\
@@ -152,6 +154,46 @@ For example; some other packages seem to have gained some classes (chart.axis) w
 	\includegraphics[width=0.7\textwidth]{coverage/AFTER.png}
 	\caption{coverage after extraction}
 \end{figure}
+
+\subsection{Results - Metrics}
+
+\newpage
+\begin{figure}[H]
+\centering
+	\includegraphics[width=\textwidth]{codescene/small/hotspots_before.png}
+	\caption{codescene hotspots before extraction}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=\textwidth]{codescene/small/hotspots_after.png}
+	\caption{codescene hotspots before extraction}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=\textwidth]{codescene/small/ref_targs_before.png}
+	\caption{codescene hotspots before extraction}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=\textwidth]{codescene/small/ref_targs_after.png}
+	\caption{codescene hotspots before extraction}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=\textwidth]{codescene/small/analysis_scope_before.png}
+	\caption{codescene hotspots before extraction}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=\textwidth]{codescene/small/analysis_scope_after.png}
+	\caption{codescene hotspots before extraction}
+\end{figure}
+
 
 \subsection{Testing}
 
