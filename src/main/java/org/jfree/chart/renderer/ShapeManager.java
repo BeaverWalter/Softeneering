@@ -11,6 +11,9 @@ import java.awt.geom.Rectangle2D;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.Arrays;
+import java.util.EventListener;
+import java.util.List;
 
 public abstract class ShapeManager {
 
@@ -300,6 +303,46 @@ public abstract class ShapeManager {
     public void setDefaultLegendShape(Shape shape) {
         this.defaultLegendShape = shape;
         fireChangeEvent();
+    }
+
+
+    /**
+     * Registers an object to receive notification of changes to the renderer.
+     *
+     * @param listener  the listener ({@code null} not permitted).
+     *
+     * @see #removeChangeListener(RendererChangeListener)
+     */
+    public void addChangeListener(RendererChangeListener listener) {
+        Args.nullNotPermitted(listener, "listener");
+        this.listenerList.add(RendererChangeListener.class, listener);
+    }
+
+    /**
+     * Deregisters an object so that it no longer receives
+     * notification of changes to the renderer.
+     *
+     * @param listener  the object ({@code null} not permitted).
+     *
+     * @see #addChangeListener(RendererChangeListener)
+     */
+    public void removeChangeListener(RendererChangeListener listener) {
+        Args.nullNotPermitted(listener, "listener");
+        this.listenerList.remove(RendererChangeListener.class, listener);
+    }
+
+    /**
+     * Returns {@code true} if the specified object is registered with
+     * the dataset as a listener.  Most applications won't need to call this
+     * method, it exists mainly for use by unit testing code.
+     *
+     * @param listener  the listener.
+     *
+     * @return A boolean.
+     */
+    public boolean hasListener(EventListener listener) {
+        List list = Arrays.asList(this.listenerList.getListenerList());
+        return list.contains(listener);
     }
 
 

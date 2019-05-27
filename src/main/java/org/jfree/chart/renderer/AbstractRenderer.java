@@ -363,10 +363,10 @@ public abstract class AbstractRenderer extends ShapeManager implements Cloneable
     private int defaultEntityRadius;
 
     /** Storage for registered change listeners. */
-    private transient EventListenerList listenerList;
+//    private transient EventListenerList listenerList;
 
     /** An event for re-use. */
-    private transient RendererChangeEvent event;
+//    private transient RendererChangeEvent event;
 
     /**
      * Default constructor.
@@ -2697,78 +2697,7 @@ public abstract class AbstractRenderer extends ShapeManager implements Cloneable
         }
         return result;
     }
-
-    /**
-     * Registers an object to receive notification of changes to the renderer.
-     *
-     * @param listener  the listener ({@code null} not permitted).
-     *
-     * @see #removeChangeListener(RendererChangeListener)
-     */
-    public void addChangeListener(RendererChangeListener listener) {
-        Args.nullNotPermitted(listener, "listener");
-        this.listenerList.add(RendererChangeListener.class, listener);
-    }
-
-    /**
-     * Deregisters an object so that it no longer receives
-     * notification of changes to the renderer.
-     *
-     * @param listener  the object ({@code null} not permitted).
-     *
-     * @see #addChangeListener(RendererChangeListener)
-     */
-    public void removeChangeListener(RendererChangeListener listener) {
-        Args.nullNotPermitted(listener, "listener");
-        this.listenerList.remove(RendererChangeListener.class, listener);
-    }
-
-    /**
-     * Returns {@code true} if the specified object is registered with
-     * the dataset as a listener.  Most applications won't need to call this
-     * method, it exists mainly for use by unit testing code.
-     *
-     * @param listener  the listener.
-     *
-     * @return A boolean.
-     */
-    public boolean hasListener(EventListener listener) {
-        List list = Arrays.asList(this.listenerList.getListenerList());
-        return list.contains(listener);
-    }
-
-    /**
-     * Sends a {@link RendererChangeEvent} to all registered listeners.
-     *
-     * @since 1.0.5
-     */
-    protected void fireChangeEvent() {
-
-        // the commented out code would be better, but only if
-        // RendererChangeEvent is immutable, which it isn't.  See if there is
-        // a way to fix this...
-
-        //if (this.event == null) {
-        //    this.event = new RendererChangeEvent(this);
-        //}
-        //notifyListeners(this.event);
-
-        notifyListeners(new RendererChangeEvent(this));
-    }
-
-    /**
-     * Notifies all registered listeners that the renderer has been modified.
-     *
-     * @param event  information about the change event.
-     */
-    public void notifyListeners(RendererChangeEvent event) {
-        Object[] ls = this.listenerList.getListenerList();
-        for (int i = ls.length - 2; i >= 0; i -= 2) {
-            if (ls[i] == RendererChangeListener.class) {
-                ((RendererChangeListener) ls[i + 1]).rendererChanged(event);
-            }
-        }
-    }
+    
 
     /**
      * Tests this renderer for equality with another object.
@@ -3110,6 +3039,7 @@ public abstract class AbstractRenderer extends ShapeManager implements Cloneable
      * @throws IOException  if there is an I/O error.
      * @throws ClassNotFoundException  if there is a classpath problem.
      */
+
     private void readObject(ObjectInputStream stream)
         throws IOException, ClassNotFoundException {
         stream.defaultReadObject();
