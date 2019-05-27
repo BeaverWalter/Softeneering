@@ -182,6 +182,20 @@ We tried to stand in the shoes of the 'customer'. Whether he would be satisfied 
 
 There has been a lot of discussing, about a lot of things, some of them being: what is our scope, when are we not doing enough, when are we going out of scope... But one thing in particular: What is the line between refactoring (preparing the project to allow for the implementation of the requested features) and implementing (actually readying the code for this implementation). We agreed that it was not our place to decide how a third person would or should implement those features, which led to being our biggest holdback in  doing things during this project. Yes, we could have made a database interface to \textit{portray that reading shapes from a database would be fairly easy}, or we could have effectively implemented some version of the getItemShape (and setItemShape), but other than serving as unfinished examples just to prove our point it would be useless. If our explanation cannot prove our point, than we probably are just explaining it wrong.
 
+\subsection{Notes}
+
+\subsubsection{Tool Usage}
+
+In this section we'll list all the tools which we used to become our results for this assignment.
+
+\begin{itemize}
+	\item Jetbrains IntelliJ\newline usage: code editing, code inspection, feature location, duplicate detection, code smells, refactoring
+	\item CodeScene\newline usage: code smells, refactoring targets, general project analysis
+	\item iClones\newline usage: duplicate detection
+	\item SonarCloud\newline usage: bug detection, duplicate detection, code smells, general analysis
+	\item Cobertura (included with the project)\newline usage: coverage analysis
+\end{itemize}
+
 \newpage
 \bibliography{mybibfile}
 
