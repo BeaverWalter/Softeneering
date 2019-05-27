@@ -353,15 +353,6 @@ public abstract class ShapeManager {
      */
     protected void fireChangeEvent() {
 
-        // the commented out code would be better, but only if
-        // RendererChangeEvent is immutable, which it isn't.  See if there is
-        // a way to fix this...
-
-        //if (this.event == null) {
-        //    this.event = new RendererChangeEvent(this);
-        //}
-        //notifyListeners(this.event);
-
         notifyListeners(new RendererChangeEvent(this));
     }
 
@@ -380,31 +371,6 @@ public abstract class ShapeManager {
         }
     }
 
-
-    /**
-     * Tests this renderer for equality with another object.
-     *
-     * @param obj  the object ({@code null} permitted).
-     *
-     * @return {@code true} or {@code false}.
-     */
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (!(obj instanceof ShapeManager)) {
-            return false;
-        }
-        ShapeManager that = (ShapeManager) obj;
-        if (!ObjectUtils.equal(this.shapeList, that.shapeList)) {
-            return false;
-        }
-        if (!ShapeUtils.equal(this.defaultShape, that.defaultShape)) {
-            return false;
-        }
-        return true;
-    }
 
     /**
      * Returns an independent copy of the renderer.

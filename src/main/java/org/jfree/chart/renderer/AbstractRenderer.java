@@ -2697,7 +2697,7 @@ public abstract class AbstractRenderer extends ShapeManager implements Cloneable
         }
         return result;
     }
-    
+
 
     /**
      * Tests this renderer for equality with another object.
