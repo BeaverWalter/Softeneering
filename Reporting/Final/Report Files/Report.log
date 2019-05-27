@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  27 MAY 2019 16:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  28 MAY 2019 00:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,51 +461,51 @@ Overfull \hbox (11.48108pt too wide) in paragraph at lines 286--287
 t-Cat-e-go-ryRen-derer or ab-strac-tXYItem-
  []
 
-[12]
-<images/coverage/BEFORE.png, id=187, 923.45pt x 1927.2pt>
+[12] [13]
+<images/coverage/BEFORE.png, id=192, 923.45pt x 1927.2pt>
 File: images/coverage/BEFORE.png Graphic file (type png)
 <use images/coverage/BEFORE.png>
 Package pdftex.def Info: images/coverage/BEFORE.png  used on input line 303.
 (pdftex.def)             Requested size: 241.49895pt x 504.00085pt.
- [13pdfTeX warning (ext4): destination with the same identifier (name{figure.6}
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.6}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.307 \newpage
                <./images/coverage/BEFORE.png>]
-<images/coverage/AFTER.png, id=195, 923.45pt x 1927.2pt>
+<images/coverage/AFTER.png, id=199, 923.45pt x 1927.2pt>
 File: images/coverage/AFTER.png Graphic file (type png)
 <use images/coverage/AFTER.png>
 Package pdftex.def Info: images/coverage/AFTER.png  used on input line 310.
 (pdftex.def)             Requested size: 241.49895pt x 504.00085pt.
- [14pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.314 \newpage
                <./images/coverage/AFTER.png>]
-<images/coverage/AFTER_TESTS.png, id=202, 923.45pt x 1927.2pt>
+<images/coverage/AFTER_TESTS.png, id=206, 923.45pt x 1927.2pt>
 File: images/coverage/AFTER_TESTS.png Graphic file (type png)
 <use images/coverage/AFTER_TESTS.png>
 Package pdftex.def Info: images/coverage/AFTER_TESTS.png  used on input line 31
 7.
 (pdftex.def)             Requested size: 241.49895pt x 504.00085pt.
- [15pdfTeX warning (ext4): destination with the same identifier (name{figure.8}
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.8}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.321 \newpage
                <./images/coverage/AFTER_TESTS.png>]
-<images/coverage/AFTER_SPASS.png, id=209, 923.45pt x 1927.2pt>
+<images/coverage/AFTER_SPASS.png, id=213, 923.45pt x 1927.2pt>
 File: images/coverage/AFTER_SPASS.png Graphic file (type png)
 <use images/coverage/AFTER_SPASS.png>
 Package pdftex.def Info: images/coverage/AFTER_SPASS.png  used on input line 32
 4.
 (pdftex.def)             Requested size: 241.49895pt x 504.00085pt.
- [16pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -536,37 +536,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--345
 
  []
 
-[17] [18] (./Report.bbl
+[18] [19] (./Report.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 11.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 368.
- [19]
+ [20]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 368.
  (./Report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 368.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 368.
-
-
-Package rerunfilecheck Warning: File `Report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Report.out':
-(rerunfilecheck)             Before: 14E59BA2169DCB64F0548111DD9608BA;1801
-(rerunfilecheck)             After:  C88B4253C0A85142F4269310CAC9A671;1816.
+Package rerunfilecheck Info: File `Report.out' has not changed.
+(rerunfilecheck)             Checksum: C88B4253C0A85142F4269310CAC9A671;1816.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 368.
  ) 
 Here is how much of TeX's memory you used:
- 5238 strings out of 492982
- 78392 string characters out of 6134896
+ 5239 strings out of 492982
+ 78399 string characters out of 6134896
  160562 words of memory out of 5000000
  8708 multiletter control sequences out of 15000+600000
  8716 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,6n,28p,992b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,6n,28p,992b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -574,10 +567,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Report.pdf (19 pages, 1037138 bytes).
+Output written on Report.pdf (20 pages, 1037671 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 231 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
+ 280 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
  270 words of extra memory for PDF output out of 10000 (max. 10000000)
 
