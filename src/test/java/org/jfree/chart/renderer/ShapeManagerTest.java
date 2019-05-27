@@ -162,6 +162,12 @@ public class ShapeManagerTest {
         r1.setDefaultLegendShape(null);
         assertTrue(r1.lookupLegendShape(1).equals(new Ellipse2D.Double(1, 2, 3, 4)));
 
+        r1.setDefaultShape(new Ellipse2D.Double(4, 3, 2, 1), false);
+        assertTrue(r1.getDefaultShape().equals(new Ellipse2D.Double(4, 3, 2, 1)));
+
+
+
+
     }
 
     @Test
