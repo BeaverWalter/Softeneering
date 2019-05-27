@@ -36,7 +36,7 @@ The problem which we should try to grasp is the following: a hypothetical custom
 
 \subsection{Scope}
 
-The assignment is directed at a very specific part of the library. While there is no functionality to explicitly give each separate datapoint a specific shape, there is already functionlity for datapoints to have shapes (which was to be expted). While there are very much aspects to this library, many of which could perhaps require their own refactoring, we will only focus on the functionality concerning shapes. Throughout the report we might refer back to this limit as our scope.
+The assignment is directed at a very specific part of the library. While there is no functionality to explicitly give each separate datapoint a specific shape, there is already functionality for datapoints to have shapes (which was to be expected). While there are very much aspects to this library, many of which could perhaps require their own refactoring, we will only focus on the functionality concerning shapes. Throughout the report we might refer back to this limit as our scope.
 
 \section{Design Recovery}
 
@@ -125,7 +125,7 @@ After some hefty discussing, we agreed that expanding our scope, would make the 
 
 Due to the nature of our workflow, you might already have guessed that there is not much planning and managing to do on with our current plan. The greater part of what we did was mostly discussing whether what we were doing was the right thing to do.\\
 
-In other cases using a Ghantt or Pert chart might be a usefull tool, but in our case the work which has to be done should only take a mere minutes, since it's mostly cut and paste work. Nevertheless this doesn't mean that we shouldn't have to check the changes that we made.
+In other cases using a Ghantt or Pert chart might be a useful tool, but in our case the work which has to be done should only take a mere minutes, since it's mostly cut and paste work. Nevertheless this doesn't mean that we shouldn't have to check the changes that we made.
 
 \section{Restructuring}
 
@@ -133,8 +133,15 @@ In other cases using a Ghantt or Pert chart might be a usefull tool, but in our 
 
 \subsubsection{Results - Duplicate Code}
 
+We used 2 tools to look for code duplication, Intelij and Iclones. Both had confusing results.\\
 
+First we ran the tools on a version of Jfreechart without the refactor to have a baseline to compare to. We saw that Iclones found a lot of duplicates. These can be found in the clonereportbefore.txt file. We expect that this will only increase because we literally copied some functions. Thus effectively introduced a new duplicate.\\
 
+After running Iclones on the recent version of JfreeChart (one where the refactor was done) we saw a surprising result. The amount of duplicates found had drastically been reduced. Which we found odd because of the aforementioned duplicate we introduced.\\
+
+To try clarify these results we ran also duplicate detection with Intelij. This gave similar results but was easier to navigate and analyze. Here we discovered that some duplicates didn't show up because of a low complexity or severity.\\
+
+We theorize that thanks to the refactor. A lot of duplicates get less severe or complex. That in turn makes them not show up in the results of duplicate analysis. Another clarification could be that the heuristic used during duplicate analysis somehow doesn't recognize the same duplicates anymore.\\
 \subsubsection{Results - Coverage}
 
 We ran coverage reports before and after we performed our shape functionality extraction (moved them to our ShapeManager class), which gave us some surprising results. While we didn't expect much of the coverage to change (since in theory almost everything stays the same) except for some minor details concerning the classes/packages which were directly linked to AbstractRenderer, but the results show us some strange changes.\\
@@ -154,46 +161,6 @@ For example; some other packages seem to have gained some classes (chart.axis) w
 	\includegraphics[width=0.7\textwidth]{coverage/AFTER.png}
 	\caption{coverage after extraction}
 \end{figure}
-
-\subsection{Results - Metrics}
-
-\newpage
-\begin{figure}[H]
-\centering
-	\includegraphics[width=\textwidth]{codescene/small/hotspots_before.png}
-	\caption{codescene hotspots before extraction}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-	\includegraphics[width=\textwidth]{codescene/small/hotspots_after.png}
-	\caption{codescene hotspots before extraction}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-	\includegraphics[width=\textwidth]{codescene/small/ref_targs_before.png}
-	\caption{codescene hotspots before extraction}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-	\includegraphics[width=\textwidth]{codescene/small/ref_targs_after.png}
-	\caption{codescene hotspots before extraction}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-	\includegraphics[width=\textwidth]{codescene/small/analysis_scope_before.png}
-	\caption{codescene hotspots before extraction}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-	\includegraphics[width=\textwidth]{codescene/small/analysis_scope_after.png}
-	\caption{codescene hotspots before extraction}
-\end{figure}
-
 
 \subsection{Testing}
 
