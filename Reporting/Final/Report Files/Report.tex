@@ -40,7 +40,15 @@ The assignment is directed at a very specific part of the library. While there i
 
 \section{Design Recovery}
 
-To understand what should be changed in the project, we must first understand how the project works. Since our scope is the functionality of shapes, we must thus try to work out what the role of these shapes is, and how precisely they work.
+To understand what should be changed in the project, we must first understand how the project works. Since our scope is the functionality of shapes, we must thus try to work out what the role of these shapes is, and how precisely they work.\\
+
+To try and understand the working of the project, we used two methods: simply digging through code and using project visualizers. One such visualizer is Gource. Gource in general can be used to give a visual representation of how a repository has evolved through its development, but the final image (which can be interacted with) shows us a general overview of the project structure (see Figure 1). Such we can also see that there is a clean symmetry between the upper branch and the right branch of the project, which represent the source and the test parts of the project. For most classes in the source, a representative class could be found in the tests.
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=0.9\textwidth]{gource/GOURCE.png}
+	\caption{AbstractCategoryItemRenderer before any refactorings}
+\end{figure}
 
 \subsection{Analysis of the current design}
 
@@ -76,7 +84,9 @@ Nevertheless, we'll try and find more opportunities to restructure the project t
 
 While we think that the shape functionality itself does not need changing to allow for the requested features, we do think that it is not easy for people who are not familiar with the project to effectively find where the functionality of the shapes resides (which is in the AbstractRenderer class).\\
 
-Because of this we propose to pull away this functionality from the AbstractRenderer class, and put it inside of it's own class (which we will call ShapeManager) and make AbstractRenderer extend from it, simply to provide more clarity and to make the functionality easier to find. As such, the following are diagrams of how the current implementation of AbstractXYItemRenderer is and how the current implementation of AbstractCategoryItemRenderer is.
+Because of this we propose to pull away this functionality from the AbstractRenderer class, and put it inside of it's own class (which we will call ShapeManager) and make AbstractRenderer extend from it, simply to provide more clarity and to make the functionality easier to find. As such, the following are diagrams of how the current implementation of AbstractXYItemRenderer is and how the current implementation of AbstractCategoryItemRenderer is.\\
+
+We would also pull away all functionality which was needed by shape functionality, mostly function relevant to listeners., as well as the clone and equals function (although their functionality had to be changed a little bit as they would not need to copy/compare the attributes which had not been pulled away from AbstractRenderer). This however was only decided after our initial feature extraction had been performed and served mostly to avoid extra duplication.
 
 \begin{figure}[H]
 \centering
@@ -111,7 +121,10 @@ To reiterate; we want to perform this refactor purely for the sake of clarity, t
 
 Since we simply want to pull away the functionality, and put it in a class from which the original class will extend, we effectively make sure that our original class doesn't change (since a compiled version will use flattened versions for classes, having the original class extend from the class with the functionality, makes it so that our original class (which is AbstractRenderer) keeps the functionality which we pulled away).\\
 
-As such it fairly clear that there aren't much risks involved with performing this refactor. Nevertheless, we should at least a) check with an IDE whether we have created errors and b) rerun the existing test suite. If the test suite fails, there is a problem. However, if it succeeds this can mean either that everything still works, or that the existing test suite is not capable and produced a false positive. Nevertheless, we'll assume that we started with a stable version of the library, which has a capable test suite.
+As such it fairly clear that there aren't much risks involved with performing this refactor. Nevertheless, we should at least a) check with an IDE whether we have created errors and b) rerun the existing test suite. If the test suite fails, there is a problem. However, if it succeeds this can mean either that everything still works, or that the existing test suite is not capable and produced a false positive. Nevertheless, we'll assume that we started with a stable version of the library, which has a capable test suite.\\
+
+\noindent
+Then there is also the fact that we would literally copy some functions and with that effectively caused some duplication (as we will show later on as well). After evaluating that we our suspicions were true, and that we would indeed create extra duplicates (see further), we assessed if it were possible to extract those functions which caused the duplication. This seemed to be a viable option, thus we planned to remove some more functionality from AbstractRenderer and put it in our ShapeManager.
 
 
 \subsection{Other possibilities}
@@ -123,30 +136,166 @@ After some hefty discussing, we agreed that expanding our scope, would make the 
 
 \section{Management}
 
-Due to the nature of our workflow, you might already have guessed that there is not much planning and managing to do on with our current plan. The greater part of what we did was mostly discussing whether what we were doing was the right thing to do.\\
+Due to the nature of our workflow, you might already have guessed that there is not much planning and managing to do on with our current plan (which turned out to be true). The greater part of what we did was mostly discussing whether what we were doing was the right thing to do.\\
 
-In other cases using a Ghantt or Pert chart might be a useful tool, but in our case the work which has to be done should only take a mere minutes, since it's mostly cut and paste work. Nevertheless this doesn't mean that we shouldn't have to check the changes that we made.
+In other cases using a Ghantt or Pert chart might be a useful tool, but in our case the work which has to be done should only take a mere minutes, since it's mostly cut and paste work. Nevertheless this doesn't mean that we shouldn't have to check the changes that we made.\\
+
+As such, we would also have to asses the existing tests for the system and decide whether or not we would require new/separate tests for our changed components. Initially we discussed that there wouldn't need to be additional tests because of the nature of our refactor, but we nevertheless planned to write (or at least create) a separate test class which would test some specific features of the ShapeManager. Yet once again, we decided that this would need no specific planning as we thought the work would only be a matter of copying and pasting (and some slight additions), which it indeed turned out to be.
 
 \section{Restructuring}
 
-\subsection{Refactoring}
+\subsection{Refactoring, pass1}
 
 \subsubsection{Results - Duplicate Code}
 
-We used 2 tools to look for code duplication, Intelij and Iclones. Both had confusing results.\\
+We initially used 2 tools to look for code duplication, Intelij and Iclones. Both had confusing results.\\
 
-First we ran the tools on a version of Jfreechart without the refactor to have a baseline to compare to. We saw that Iclones found a lot of duplicates. These can be found in the clonereportbefore.txt file. We expect that this will only increase because we literally copied some functions. Thus effectively introduced a new duplicate.\\
+First we ran the tools on a version of Jfreechart without the refactor to have a baseline to compare to. We saw that Iclones found a lot of duplicates. These can be found in the clonereportbefore.txt file. These duplicate results to increase afther the functionality extraction, since some functions were literally copied for stability, thus effectively introducing new duplicates.\\
 
-After running Iclones on the recent version of JfreeChart (one where the refactor was done) we saw a surprising result. The amount of duplicates found had drastically been reduced. Which we found odd because of the aforementioned duplicate we introduced.\\
+After running Iclones on the recent version of JfreeChart (one where the extraction was done) we saw a surprising result. The amount of duplicates found had drastically been reduced. Which we found odd because of the aforementioned duplicates we had introduced.\\
 
 To try clarify these results we ran also duplicate detection with Intelij. This gave similar results but was easier to navigate and analyze. Here we discovered that some duplicates didn't show up because of a low complexity or severity.\\
 
 We theorize that thanks to the refactor. A lot of duplicates get less severe or complex. That in turn makes them not show up in the results of duplicate analysis. Another clarification could be that the heuristic used during duplicate analysis somehow doesn't recognize the same duplicates anymore.\\
+
+\noindent
+In any case, we would need to find some way of having more clarity. Thus we moved to use a third tool (which did a lot more than just duplicate detection), SonarCloud. This seemed to be a better option, since it was a) easier to navigate and use than both Iclones and IntelliJ, b) showed us what we expected; the copied code was detected as duplicates and c) it generally gave us better duplication information about the project.\\
+
+Now that we had confirmation that we indeed created some more duplication, we tried to pull away the functionality which caused the duplication (as we mentioned above).
+
 \subsubsection{Results - Coverage}
 
 We ran coverage reports before and after we performed our shape functionality extraction (moved them to our ShapeManager class), which gave us some surprising results. While we didn't expect much of the coverage to change (since in theory almost everything stays the same) except for some minor details concerning the classes/packages which were directly linked to AbstractRenderer, but the results show us some strange changes.\\
 
 For example; some other packages seem to have gained some classes (chart.axis) while other packages seem to have lost some classes (data.json, data.json.impl, chart.text).
+
+\subsection{Testing}
+
+\subsubsection{Results - Coverage}
+
+After we completed our additional test classes, we reran our coverage analysis which greeted us with some promising results. Line coverage had improved from 62\% to 68\% and branch coverage had improved from 49\% to 52\% in the whole renderer package (and not just in our ShapeManager class).
+
+\subsubsection{Preparing for the future}
+
+While we didn't actually expand the testing suite all that much, we can still suggest future testing scenarios which could help the person implementing the new functionality with testing the old and new functionality.\\
+
+Each scenario notes where it's applicable and what needs to be tested.
+The following steps are the same over all scenario's:\\
+\begin{enumerate}
+	\item export a chart using the specified \textit{Renderer}.
+	\item verify if the chart has the desired shapes.
+\end{enumerate}
+SC1: The getShape function is overwritten in abstractRenderer\\
+SC1.1: 
+\begin{itemize}
+	\item Use: \textit{all classes that inherit from abstractXYItemRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC1.2: 
+\begin{itemize}
+	\item Use: \textit{all classes that inherit from abstractCategoryRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC1.3:
+\begin{itemize}
+	\item Use: \textit{all subclasses of classes that inherit from abstractXYItemRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC1.4:
+\begin{itemize}
+	\item Use: \textit{all subclasses of classes that inherit from abstractCategoryRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC2: The getShape function is overwritten in AbstractXYItemRenderer\\
+SC2.1: 
+\begin{itemize}
+	\item Use: \textit{all classes that inherit from abstractXYItemRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC2.2: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of classes that inherit from abstractXYItemRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC2.3: 
+\begin{itemize}
+	\item Use: \textit{all classes that inherit from abstractCategoryRenderer}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC2.4: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of classes that inherit from abstractCategoryRenderer}
+	\item Result: chart should use the default shape functionality
+\end{itemize}
+SC3: The getShape function is overwritten in AbstractCategoryRenderer.\\
+SC3.1: 
+\begin{itemize}
+	\item Use: \textit{all classes that inherit from abstractXYItemRenderer}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC3.2: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of classes that inherit from abstractXYItemRenderer}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC3.3: 
+\begin{itemize}
+	\item Use: \textit{all classes that inherit from abstractCategoryRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC3.4: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of classes that inherit from abstractCategoryRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC4: The getShape function is overwritten in a inherited Renderer R of either abstractXYItemRenderer or abstractCategoryRenderer.\\
+SC4.1: 
+\begin{itemize}
+	\item Use: \textit{all classes inherited of abstractXYItemRenderer or abstractCategoryRenderer other than R}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC4.2: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of R}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC4.3: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of a inherited class of abstractXYItemRenderer or abstractCategoryRenderer that does not inherits from R}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC5: The getShape function is overwritten in a subclass of a inherited Renderer R of either abstractXYItemRenderer or abstractCategoryRenderer.\\
+SC5.1: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of a inherited Renderer of abstractXYItemRenderer or abstractCategoryRenderer other than R}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC5.2: 
+\begin{itemize}
+	\item Use: \textit{all inherited Renderers from where R is a subclass}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC6: the getShape function is implemented in the ShapeManager.\\
+SC6.1: 
+\begin{itemize}
+	\item Use: \textit{all subclass of a inherited Renderer of abstractCategoryRenderer or abstractXYItemRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC6.2: 
+\begin{itemize}
+	\item Use: \textit{all inherited Renderers of abstractCategoryRenderer or abstractXYItemRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+
+\subsection{Refactoring, pass 2}
+
+\subsubsection{Results - Duplicate Code}
+
+Now that we made some additional changes to the project, we had to rerun our duplication analysis to get confirmation whether or not the duplication which we had caused in the first place had indeed been removed by our subsequent action. The results of our analysis did not make it immediately clear that our duplication had been removed (this probably because the caused duplication had such a small impact on the total amount of duplication present in the project), but upon further inspection, we could indeed confirm that our duplication had been removed.
+
+\subsubsection{Results - Coverage}
+
+Even more so, after having our duplication removed, we reran our coverage analysis once more and could conclude that our results had improved even more; line coverage had increased with 1\% and branch coverage had even increased with 2\% (once again this is for the whole renderer package, and not just the ShapeManager).
 
 \newpage
 \begin{figure}[H]
@@ -162,7 +311,19 @@ For example; some other packages seem to have gained some classes (chart.axis) w
 	\caption{coverage after extraction}
 \end{figure}
 
-\subsection{Testing}
+\newpage
+\begin{figure}[H]
+\centering
+	\includegraphics[width=0.7\textwidth]{coverage/AFTER_TESTS.png}
+	\caption{coverage after expanding test suite}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\centering
+	\includegraphics[width=0.7\textwidth]{coverage/AFTER_SPASS.png}
+	\caption{coverage after expanding test suite and second refactor pass}
+\end{figure}
 
 
 \newpage
@@ -172,7 +333,9 @@ We want to begin our conclusion with a well known saying: "If it aint broke, don
 
 The second thing we want to mention in our conclusion is yet again our scope. Simply said, we had to refactor the project as to allow the requested functionality to be implemented. So the first (big) question we asked ourselves was: what should be refactored to allow for this functionality to be implemented? When we finally figured out how the system worked, our first remark was: \textit{this project doesn't need to be refactored to allow for the requested functionality}.\\
 
-But this doesn't mean that everything in the system is optimal. So since our first step was to 'refactor the system as to allow for the requested behavior', the second step would be 'check whether the system (within our working scope) has other optimization we can realize'. So after evaluating whether our scope had to be expanded (which we eventually didn't), we began perfoming some analysis techniques on this extracted functionality.
+But this doesn't mean that everything in the system is optimal. So since our first step was to 'refactor the system as to allow for the requested behavior' (which eventually resulted in us extracting the shape functionality and adapting the testing suite), the second step would be 'check whether the system (within our working scope) has other optimization we can realize'. So after evaluating whether our scope had to be expanded (which we eventually concluded that it didn't), we began perfoming some analysis techniques on this extracted functionality. This resulted in what we called our 'second refactor pass'.\\
+
+With our second pass, it became clear that in the process of extracting our functionality, we created some code duplication as well. After some discussing and assessing whether or not it was possible and feasible to extract more functionality to avoid this duplication, we eventually decided that it would cause no other trouble and would be beneficial overall.
 
 \subsection{Remarks}
 
@@ -194,6 +357,8 @@ In this section we'll list all the tools which we used to become our results for
 	\item iClones\newline usage: duplicate detection
 	\item SonarCloud\newline usage: bug detection, duplicate detection, code smells, general analysis
 	\item Cobertura (included with the project)\newline usage: coverage analysis
+	\item Gource\newline usage: repository visualization
+	\item Conqueror (Eclipse plugin)\newline usage: feature location
 \end{itemize}
 
 \newpage

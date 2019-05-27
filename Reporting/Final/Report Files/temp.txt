@@ -1,0 +1,107 @@
+Each scenario tells on what it's applicable and what needs to be tested.
+The following steps are the same over all scenario's:\\
+\begin{enumerate}
+	\item export a chart using the specified \textit{Renderer}.
+	\item verify if the chart has the desired shapes.
+\end{enumerate}
+SC1: The getShape function is overwritten in abstractRenderer\\
+SC1.1: 
+\begin{itemize}
+	\item Use: \textit{all classes that inherit from abstractXYItemRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC1.2: 
+\begin{itemize}
+	\item Use: \textit{all classes that inherit from abstractCategoryRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC1.3:
+\begin{itemize}
+	\item Use: \textit{all subclasses of classes that inherit from abstractXYItemRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC1.4:
+\begin{itemize}
+	\item Use: \textit{all subclasses of classes that inherit from abstractCategoryRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC2: The getShape function is overwritten in AbstractXYItemRenderer\\
+SC2.1: 
+\begin{itemize}
+	\item Use: \textit{all classes that inherit from abstractXYItemRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC2.2: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of classes that inherit from abstractXYItemRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC2.3: 
+\begin{itemize}
+	\item Use: \textit{all classes that inherit from abstractCategoryRenderer}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC2.4: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of classes that inherit from abstractCategoryRenderer}
+	\item Result: chart should use the default shape functionality
+\end{itemize}
+SC3: The getShape function is overwritten in AbstractCategoryRenderer.\\
+SC3.1: 
+\begin{itemize}
+	\item Use: \textit{all classes that inherit from abstractXYItemRenderer}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC3.2: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of classes that inherit from abstractXYItemRenderer}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC3.3: 
+\begin{itemize}
+	\item Use: \textit{all classes that inherit from abstractCategoryRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC3.4: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of classes that inherit from abstractCategoryRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC4: The getShape function is overwritten in a inherited Renderer R of either abstractXYItemRenderer or abstractCategoryRenderer.\\
+SC4.1: 
+\begin{itemize}
+	\item Use: \textit{all classes inherited of abstractXYItemRenderer or abstractCategoryRenderer other than R}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC4.2: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of R}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC4.3: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of a inherited class of abstractXYItemRenderer or abstractCategoryRenderer that does not inherits from R}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC5: The getShape function is overwritten in a subclass of a inherited Renderer R of either abstractXYItemRenderer or abstractCategoryRenderer.\\
+SC5.1: 
+\begin{itemize}
+	\item Use: \textit{all subclasses of a inherited Renderer of abstractXYItemRenderer or abstractCategoryRenderer other than R}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC5.2: 
+\begin{itemize}
+	\item Use: \textit{all inherited Renderers from where R is a subclass}
+	\item Result: the chart should use the default shape functionality
+\end{itemize}
+SC6: the getShape function is implemented in the ShapeManager.\\
+SC6.1: 
+\begin{itemize}
+	\item Use: \textit{all subclass of a inherited Renderer of abstractCategoryRenderer or abstractXYItemRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
+SC6.2: 
+\begin{itemize}
+	\item Use: \textit{all inherited Renderers of abstractCategoryRenderer or abstractXYItemRenderer}
+	\item Result: the chart should use the changed shape functionality
+\end{itemize}
