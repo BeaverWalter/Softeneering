@@ -5,9 +5,8 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
-\bibitem{mps}
-\href{https://www.jetbrains.com/mps/}{{MPS}: The domain specific language
-  creator by jetbrains}.
-\newline\urlprefix\url{https://www.jetbrains.com/mps/}
+\bibitem{srboek}
+O.~N. Serge~Demeyer, Stéphane~Ducasse, Object-oriented reengineering patterns
+  (2013).
 
 \end{thebibliography}

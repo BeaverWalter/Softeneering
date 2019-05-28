@@ -146,6 +146,8 @@ As such, we would also have to asses the existing tests for the system and decid
 
 \subsection{Refactoring, pass1}
 
+Our plan (as is described above) is exactly what we effectively performed during pass 1 of our refactor (we'll come back to why there are multiple passes in pass 2): we took all the relevant functionality concerning shapes from the class AbstractRenderer, and extracted this functionality into it's own class ShapeManager. We then let AbstractRenderer extend from ShapeManager.
+
 \subsubsection{Results - Duplicate Code}
 
 We initially used 2 tools to look for code duplication, Intelij and Iclones. Both had confusing results.\\
@@ -289,6 +291,8 @@ SC6.2:
 
 \subsection{Refactoring, pass 2}
 
+After our first pass, we saw that there was some more functionality which could have been extracted, as well as some duplication caused by our original extraction. Because of this we wanted to do a second refactor pass to improve upon the things we did in the first pass. Our second pass then effectively was extracting additional functionality as well as removing redundant functionality, or functionality which caused duplication.
+
 \subsubsection{Results - Duplicate Code}
 
 Now that we made some additional changes to the project, we had to rerun our duplication analysis to get confirmation whether or not the duplication which we had caused in the first place had indeed been removed by our subsequent action. The results of our analysis did not make it immediately clear that our duplication had been removed (this probably because the caused duplication had such a small impact on the total amount of duplication present in the project), but upon further inspection, we could indeed confirm that our duplication had been removed.
@@ -325,17 +329,22 @@ Even more so, after having our duplication removed, we reran our coverage analys
 	\caption{coverage after expanding test suite and second refactor pass}
 \end{figure}
 
+\subsubsection{Results - Remarks}
+
+We would like to note that even though we use the coverage of the system to prove that some aspects of the system are improved, we would still like to say that we know that coverage is just a metric and not absolute proof. It can be used to aide your findings and workflow, but it gives no guarantee of a perfect (testing) system (as we have clearly seen in the Software Testing lecture). Nevertheless, we wanted wanted to use coverage as it is a indicator for improvement for our specific changes.
 
 \newpage
 \section{Conclusion}
 
-We want to begin our conclusion with a well known saying: "If it aint broke, don't fix it." The problem with this quote is that it is often used as an excuse for not touching a working piece of software, which may still be broken in some way.\cite{mps}\\ 
+We want to begin our conclusion with a well known saying: "If it aint broke, don't fix it." The problem with this quote is that it is often used as an excuse for not touching a working piece of software, which may still be broken in some way.\cite{srboek}\\ 
 
 The second thing we want to mention in our conclusion is yet again our scope. Simply said, we had to refactor the project as to allow the requested functionality to be implemented. So the first (big) question we asked ourselves was: what should be refactored to allow for this functionality to be implemented? When we finally figured out how the system worked, our first remark was: \textit{this project doesn't need to be refactored to allow for the requested functionality}.\\
 
 But this doesn't mean that everything in the system is optimal. So since our first step was to 'refactor the system as to allow for the requested behavior' (which eventually resulted in us extracting the shape functionality and adapting the testing suite), the second step would be 'check whether the system (within our working scope) has other optimization we can realize'. So after evaluating whether our scope had to be expanded (which we eventually concluded that it didn't), we began perfoming some analysis techniques on this extracted functionality. This resulted in what we called our 'second refactor pass'.\\
 
-With our second pass, it became clear that in the process of extracting our functionality, we created some code duplication as well. After some discussing and assessing whether or not it was possible and feasible to extract more functionality to avoid this duplication, we eventually decided that it would cause no other trouble and would be beneficial overall.
+With our second pass, it became clear that in the process of extracting our functionality, we created some code duplication as well. After some discussing and assessing whether or not it was possible and feasible to extract more functionality to avoid this duplication, we eventually decided that it would cause no other trouble and would be beneficial overall.\\
+
+
 
 \subsection{Remarks}
 
@@ -343,7 +352,7 @@ For us, this project consisted mostly of discussing what might be the right thin
 
 We tried to stand in the shoes of the 'customer'. Whether he would be satisfied if we presented him our final result. It was a tricky situation, because from the customers point of view, he wants to receive the library in a state where it is possible for him (or someone else) to actually implement those features, but we would be there to tell him: "It is already possible. It might not be that clear that it is already possible, so made it a bit clearer." So eventually we decided that our hypothetical customer would indeed be satisfied.\\
 
-There has been a lot of discussing, about a lot of things, some of them being: what is our scope, when are we not doing enough, when are we going out of scope... But one thing in particular: What is the line between refactoring (preparing the project to allow for the implementation of the requested features) and implementing (actually readying the code for this implementation). We agreed that it was not our place to decide how a third person would or should implement those features, which led to being our biggest holdback in  doing things during this project. Yes, we could have made a database interface to \textit{portray that reading shapes from a database would be fairly easy}, or we could have effectively implemented some version of the getItemShape (and setItemShape), but other than serving as unfinished examples just to prove our point it would be useless. If our explanation cannot prove our point, than we probably are just explaining it wrong.
+There has been a lot of discussing, about a lot of things, some of them being: what is our scope, when are we not doing enough, when are we going out of scope... But one thing in particular: What is the line between refactoring (preparing the project to allow for the implementation of the requested features) and implementing (actually readying the code for this implementation). We agreed that it was not our place to decide how a third person would or should implement those features, which led to being our biggest holdback in  doing things during this project. Yes, we could have made a database interface to \textit{portray that reading shapes from a database would be fairly easy}, or we could have effectively implemented some version of the getItemShape (and setItemShape), but other than serving as unfinished examples just to prove our point it would be useless. If our explanation cannot prove our point, than we probably are just explaining it wrong.\\
 
 \subsection{Notes}
 
