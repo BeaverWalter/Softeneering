@@ -159,6 +159,7 @@ public class ShapeManagerTest {
         r1.setSeriesShape(1, null);
         r1.setDefaultLegendShape(new Ellipse2D.Double(1, 2, 3, 4));
         assertTrue(r1.lookupLegendShape(1) == r1.defaultLegendShape);
+        assertTrue(r1.getDefaultLegendShape().equals(new Ellipse2D.Double(1, 2, 3, 4)));
         r1.setDefaultLegendShape(null);
         assertTrue(r1.lookupLegendShape(1).equals(new Ellipse2D.Double(1, 2, 3, 4)));
 
