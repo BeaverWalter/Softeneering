@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{graphicx, hyperref}
 \usepackage{float}
+\usepackage{hyperref}
 \bibliographystyle{elsarticle-num}
 
 \graphicspath{ {images/} }
@@ -361,13 +362,15 @@ There has been a lot of discussing, about a lot of things, some of them being: w
 In this section we'll list all the tools which we used to become our results for this assignment.
 
 \begin{itemize}
-	\item Jetbrains IntelliJ\newline usage: code editing, code inspection, feature location, duplicate detection, code smells, refactoring
-	\item CodeScene\newline usage: code smells, refactoring targets, general project analysis
+	\item Jetbrains IntelliJ\newline usage: code editing, code inspection, feature location, duplicate detection, code smells, refactoring, project visualization, general analysis
+	\item CodeScene\newline usage: code smells, refactoring targets, general project analysis, repository visualization\newline before refactor: \url{https://codescene.io/projects/4684/jobs/13060/results}\newline after pass 1 \url{https://codescene.io/projects/4929/jobs/13798/results}\newline after pass 2 \url{https://codescene.io/projects/4953/jobs/13862/results}
 	\item iClones\newline usage: duplicate detection
-	\item SonarCloud\newline usage: bug detection, duplicate detection, code smells, general analysis
+	\item SonarCloud\newline usage: bug detection, duplicate detection, code smells, general analysis, coverage analysis\newline results: \url{https://sonarcloud.io/dashboard?id=BeaverWalter_Softeneering}
 	\item Cobertura (included with the project)\newline usage: coverage analysis
 	\item Gource\newline usage: repository visualization
 	\item Conqueror (Eclipse plugin)\newline usage: feature location
+	\item JaCoCo\newline usage: coverage analysis
+	\item Github\newline usage: Version Control System\newline results: \url{https://sonarcloud.io/dashboard?id=BeaverWalter_Softeneering}
 \end{itemize}
 
 \newpage

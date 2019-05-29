@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  28 MAY 2019 15:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  29 MAY 2019 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -170,20 +170,20 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -216,7 +216,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 15.
+Package hyperref Info: Link coloring OFF on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -226,29 +226,29 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count104
 )
-LaTeX Info: Redefining \ref on input line 15.
-LaTeX Info: Redefining \pageref on input line 15.
-LaTeX Info: Redefining \nameref on input line 15.
+LaTeX Info: Redefining \ref on input line 16.
+LaTeX Info: Redefining \pageref on input line 16.
+LaTeX Info: Redefining \nameref on input line 16.
 
 (./Report.out) (./Report.out)
 \@outlinefile=\write3
 \openout3 = `Report.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 17.
+(Font)              <12> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 17.
+(Font)              <8> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 17.
+(Font)              <6> on input line 18.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
@@ -256,10 +256,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 <images/gource/GOURCE.png, id=133, 1013.7875pt x 756.8275pt>
 File: images/gource/GOURCE.png Graphic file (type png)
 <use images/gource/GOURCE.png>
-Package pdftex.def Info: images/gource/GOURCE.png  used on input line 49.
+Package pdftex.def Info: images/gource/GOURCE.png  used on input line 50.
 (pdftex.def)             Requested size: 310.4979pt x 231.79633pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
@@ -268,55 +268,55 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.58 
+l.59 
       <./images/gource/GOURCE.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
 [4]
-Overfull \hbox (20.58398pt too wide) in paragraph at lines 75--76
+Overfull \hbox (20.58398pt too wide) in paragraph at lines 76--77
 []\OT1/cmr/m/n/10 For ex-am-ple: in the above part we spoke specif-i-cally of t
 he func-tion getItemShape,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
@@ -325,59 +325,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--88
 File: images/AbstractXYItemRendererBefore.png Graphic file (type png)
 <use images/AbstractXYItemRendererBefore.png>
 Package pdftex.def Info: images/AbstractXYItemRendererBefore.png  used on input
- line 93.
+ line 94.
 (pdftex.def)             Requested size: 310.4979pt x 89.16934pt.
 <images/AbstractCategoryItemRendererBefore.png, id=151, 747.79375pt x 224.84pt>
 
 File: images/AbstractCategoryItemRendererBefore.png Graphic file (type png)
 <use images/AbstractCategoryItemRendererBefore.png>
 Package pdftex.def Info: images/AbstractCategoryItemRendererBefore.png  used on
- input line 99.
+ input line 100.
 (pdftex.def)             Requested size: 310.4979pt x 93.35832pt.
 <images/AbstractXYItemRendererAfter.png, id=152, 1001.7425pt x 224.84pt>
 File: images/AbstractXYItemRendererAfter.png Graphic file (type png)
 <use images/AbstractXYItemRendererAfter.png>
 Package pdftex.def Info: images/AbstractXYItemRendererAfter.png  used on input 
-line 108.
+line 109.
 (pdftex.def)             Requested size: 310.4979pt x 69.68938pt.
 <images/AbstractCategoryItemRendererAfter.png, id=153, 844.15375pt x 224.84pt>
 File: images/AbstractCategoryItemRendererAfter.png Graphic file (type png)
 <use images/AbstractCategoryItemRendererAfter.png>
 Package pdftex.def Info: images/AbstractCategoryItemRendererAfter.png  used on 
-input line 114.
+input line 115.
 (pdftex.def)             Requested size: 310.4979pt x 82.70232pt.
  [6pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.117 
+l.118 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.117 
+l.118 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.117 
+l.118 
        <./images/AbstractXYItemRendererBefore.png (PNG copy)> <./images/Abstrac
 tCategoryItemRendererBefore.png (PNG copy)> <./images/AbstractXYItemRendererAft
 er.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
@@ -386,77 +386,77 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.133 
+l.134 
        <./images/AbstractCategoryItemRendererAfter.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 
-Overfull \hbox (8.81534pt too wide) in paragraph at lines 172--173
+Overfull \hbox (8.81534pt too wide) in paragraph at lines 173--174
 []\OT1/cmr/m/n/10 For ex-am-ple; some other pack-ages seem to have gained some 
 classes (chart.axis)
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--186
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 193.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 194.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 193.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 194.
  [10] [11]
-Overfull \hbox (11.48108pt too wide) in paragraph at lines 288--289
+Overfull \hbox (11.48108pt too wide) in paragraph at lines 289--290
 []\OT1/cmr/m/n/10 Use: \OT1/cmr/m/it/10 all in-her-ited Ren-der-ers of ab-strac
 t-Cat-e-go-ryRen-derer or ab-strac-tXYItem-
  []
@@ -465,107 +465,141 @@ t-Cat-e-go-ryRen-derer or ab-strac-tXYItem-
 <images/coverage/BEFORE.png, id=196, 923.45pt x 1927.2pt>
 File: images/coverage/BEFORE.png Graphic file (type png)
 <use images/coverage/BEFORE.png>
-Package pdftex.def Info: images/coverage/BEFORE.png  used on input line 307.
+Package pdftex.def Info: images/coverage/BEFORE.png  used on input line 308.
 (pdftex.def)             Requested size: 241.49895pt x 504.00085pt.
  [14pdfTeX warning (ext4): destination with the same identifier (name{figure.6}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.311 \newpage
+l.312 \newpage
                <./images/coverage/BEFORE.png>]
 <images/coverage/AFTER.png, id=203, 923.45pt x 1927.2pt>
 File: images/coverage/AFTER.png Graphic file (type png)
 <use images/coverage/AFTER.png>
-Package pdftex.def Info: images/coverage/AFTER.png  used on input line 314.
+Package pdftex.def Info: images/coverage/AFTER.png  used on input line 315.
 (pdftex.def)             Requested size: 241.49895pt x 504.00085pt.
  [15pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.318 \newpage
+l.319 \newpage
                <./images/coverage/AFTER.png>]
 <images/coverage/AFTER_TESTS.png, id=210, 923.45pt x 1927.2pt>
 File: images/coverage/AFTER_TESTS.png Graphic file (type png)
 <use images/coverage/AFTER_TESTS.png>
 Package pdftex.def Info: images/coverage/AFTER_TESTS.png  used on input line 32
-1.
+2.
 (pdftex.def)             Requested size: 241.49895pt x 504.00085pt.
  [16pdfTeX warning (ext4): destination with the same identifier (name{figure.8}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.325 \newpage
+l.326 \newpage
                <./images/coverage/AFTER_TESTS.png>]
 <images/coverage/AFTER_SPASS.png, id=217, 923.45pt x 1927.2pt>
 File: images/coverage/AFTER_SPASS.png Graphic file (type png)
 <use images/coverage/AFTER_SPASS.png>
 Package pdftex.def Info: images/coverage/AFTER_SPASS.png  used on input line 32
-8.
+9.
 (pdftex.def)             Requested size: 241.49895pt x 504.00085pt.
  [17pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.335 
+l.336 
        <./images/coverage/AFTER_SPASS.png>] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--342
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
-[20] (./Report.bbl
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 366.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 366.
+
+Overfull \hbox (27.49773pt too wide) in paragraph at lines 366--367
+\OT1/cmr/m/n/10 before refac-tor: []$\OT1/cmtt/m/n/10 https : / / codescene . i
+o / projects / 4684 / jobs / 13060 / results$[] 
+ []
+
+
+Overfull \hbox (8.66434pt too wide) in paragraph at lines 366--367
+\OT1/cmr/m/n/10 after pass 1 []$\OT1/cmtt/m/n/10 https : / / codescene . io / p
+rojects / 4929 / jobs / 13798 / results$[] 
+ []
+
+
+Overfull \hbox (8.66434pt too wide) in paragraph at lines 366--367
+\OT1/cmr/m/n/10 after pass 2 []$\OT1/cmtt/m/n/10 https : / / codescene . io / p
+rojects / 4953 / jobs / 13862 / results$[] 
+ []
+
+
+Overfull \hbox (30.13622pt too wide) in paragraph at lines 368--369
+\OT1/cmr/m/n/10 results: []$\OT1/cmtt/m/n/10 https : / / sonarcloud . io / dash
+board ? id = BeaverWalter _ Softeneering$[] 
+ []
+
+[20]
+Overfull \hbox (30.13622pt too wide) in paragraph at lines 373--374
+\OT1/cmr/m/n/10 results: []$\OT1/cmtt/m/n/10 https : / / sonarcloud . io / dash
+board ? id = BeaverWalter _ Softeneering$[] 
+ []
+
+[21] (./Report.bbl
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 377.
- [21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 377.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 380.
+ [22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 380.
  (./Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 377.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 377.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 380.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 380.
 Package rerunfilecheck Info: File `Report.out' has not changed.
 (rerunfilecheck)             Checksum: 45BEF80E84B3D923E089A26F17D9B531;1893.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 377.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 380.
  ) 
 Here is how much of TeX's memory you used:
- 5238 strings out of 492982
- 78403 string characters out of 6134896
+ 5243 strings out of 492982
+ 78459 string characters out of 6134896
  160565 words of memory out of 5000000
- 8706 multiletter control sequences out of 15000+600000
- 8548 words of font info for 30 fonts, out of 8000000 for 9000
+ 8709 multiletter control sequences out of 15000+600000
+ 8716 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,6n,28p,994b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -573,11 +607,12 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Report.pdf (21 pages, 1028196 bytes).
+/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Report.pdf (22 pages, 1043692 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 236 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 247 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
  278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
